@@ -28,6 +28,7 @@
 		740A41851738113500890613 /* M-Paradox */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "M-Paradox"; sourceTree = BUILT_PRODUCTS_DIR; };
 		740A41881738113500890613 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		740A418A1738113500890613 /* M_Paradox.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = M_Paradox.1; sourceTree = "<group>"; };
+		740A41911738121700890613 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +47,7 @@
 			children = (
 				740A41871738113500890613 /* M-Paradox */,
 				740A41861738113500890613 /* Products */,
+				740A41911738121700890613 /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,10 +62,43 @@
 		740A41871738113500890613 /* M-Paradox */ = {
 			isa = PBXGroup;
 			children = (
+				740A4195173812BD00890613 /* Rubix-Space */,
+				740A41921738128100890613 /* Accounts */,
+				740A41931738128100890613 /* File IO */,
+				740A41941738128100890613 /* Network */,
 				740A41881738113500890613 /* main.cpp */,
 				740A418A1738113500890613 /* M_Paradox.1 */,
 			);
 			path = "M-Paradox";
+			sourceTree = "<group>";
+		};
+		740A41921738128100890613 /* Accounts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Accounts;
+			sourceTree = "<group>";
+		};
+		740A41931738128100890613 /* File IO */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "File IO";
+			sourceTree = "<group>";
+		};
+		740A41941738128100890613 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		740A4195173812BD00890613 /* Rubix-Space */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Rubix-Space";
+			path = "Network/Rubix-Space";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
