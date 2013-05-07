@@ -193,8 +193,17 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"/usr/local/include/\"",
+					"\"/usr/local/mysql/include/\"",
+				);
+				LIBRARY_SEARCH_PATHS = "\"/usr/local/lib/\"";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-isystem/usr/local/include/",
+				);
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -219,7 +228,16 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"/usr/local/include/\"",
+					"\"/usr/local/mysql/include/\"",
+				);
+				LIBRARY_SEARCH_PATHS = "\"/usr/local/lib/\"";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-isystem/usr/local/include/",
+				);
 				SDKROOT = macosx;
 			};
 			name = Release;
