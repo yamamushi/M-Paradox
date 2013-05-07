@@ -29,6 +29,10 @@
 		740A41881738113500890613 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		740A418A1738113500890613 /* M_Paradox.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = M_Paradox.1; sourceTree = "<group>"; };
 		740A41911738121700890613 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		740A41961738889600890613 /* Readme */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme; sourceTree = "<group>"; };
+		740A4197173888A500890613 /* Readme */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme; sourceTree = "<group>"; };
+		740A4198173888AC00890613 /* Readme */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme; sourceTree = "<group>"; };
+		740A4199173888B200890613 /* Readme */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,7 @@
 		740A41921738128100890613 /* Accounts */ = {
 			isa = PBXGroup;
 			children = (
+				740A4197173888A500890613 /* Readme */,
 			);
 			path = Accounts;
 			sourceTree = "<group>";
@@ -82,6 +87,7 @@
 		740A41931738128100890613 /* File IO */ = {
 			isa = PBXGroup;
 			children = (
+				740A4198173888AC00890613 /* Readme */,
 			);
 			path = "File IO";
 			sourceTree = "<group>";
@@ -89,6 +95,7 @@
 		740A41941738128100890613 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				740A4199173888B200890613 /* Readme */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -96,6 +103,7 @@
 		740A4195173812BD00890613 /* Rubix-Space */ = {
 			isa = PBXGroup;
 			children = (
+				740A41961738889600890613 /* Readme */,
 			);
 			name = "Rubix-Space";
 			path = "Network/Rubix-Space";
