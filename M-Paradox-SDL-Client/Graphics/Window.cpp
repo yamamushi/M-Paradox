@@ -7,6 +7,8 @@
 //
 
 #include "Window.hpp"
+#include "Surfaces.hpp"
+#include "Events.hpp"
 #include "Functions.hpp"
 #include "SDL/SDL.h"
 #include "SDL_image/SDL_image.h"
@@ -29,7 +31,7 @@ Window::Window()
     }
     
     //Set the window caption
-    SDL_WM_SetCaption( "Window Event Test", NULL );
+    SDL_WM_SetCaption( "M-Paradox", NULL );
     
     //Set window flag
     windowed = true;
@@ -73,11 +75,11 @@ void Window::handle_events()
             //If the application is no longer active
             if( event.active.gain == 0 )
             {
-                SDL_WM_SetCaption( "Window Event Test: Iconified", NULL );
+                SDL_WM_SetCaption( "M-Paradox: Iconified", NULL );
             }
             else
             {
-                SDL_WM_SetCaption( "Window Event Test", NULL );
+                SDL_WM_SetCaption( "M-Paradox", NULL );
             }
         }
         //If something happened to the keyboard focus
@@ -86,11 +88,11 @@ void Window::handle_events()
             //If the application lost keyboard focus
             if( event.active.gain == 0 )
             {
-                SDL_WM_SetCaption( "Window Event Test: Keyboard focus lost", NULL );
+                SDL_WM_SetCaption( "M-Paradox: Keyboard focus lost", NULL );
             }
             else
             {
-                SDL_WM_SetCaption( "Window Event Test", NULL );
+                SDL_WM_SetCaption( "M-Paradox", NULL );
             }
         }
         //If something happened to the mouse focus
@@ -99,11 +101,11 @@ void Window::handle_events()
             //If the application lost mouse focus
             if( event.active.gain == 0 )
             {
-                SDL_WM_SetCaption( "Window Event Test: Mouse Focus Lost", NULL );
+                SDL_WM_SetCaption( "M-Paradox: Mouse Focus Lost", NULL );
             }
             else
             {
-                SDL_WM_SetCaption( "Window Event Test", NULL );
+                SDL_WM_SetCaption( "M-Paradox", NULL );
             }
         }
     }

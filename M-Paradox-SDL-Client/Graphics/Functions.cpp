@@ -10,12 +10,10 @@
 #include "SDL/SDL.h"
 #include "Window.hpp"
 #include "Images.hpp"
+#include "Surfaces.hpp"
+#include "Events.hpp"
 
-//The surfaces
-SDL_Surface *screen = NULL;
-SDL_Surface *testing = NULL;
 
-SDL_Event event;
 
 bool init()
 {
@@ -32,6 +30,7 @@ bool init()
 bool load_files()
 {
     //Load the image
+    extern SDL_Surface *testing;
     testing = load_image( "Data/Images/Backgrounds/nostromo.jpg" );
     
     //If the image didn't load
@@ -48,6 +47,7 @@ bool load_files()
 void clean_up()
 {
     //Free the image
+    extern SDL_Surface *testing;
     SDL_FreeSurface( testing );
     
     //Quit SDL

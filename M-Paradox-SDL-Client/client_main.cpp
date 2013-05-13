@@ -13,6 +13,10 @@
 #include "Graphics/Functions.hpp"
 #include "Graphics/Window.hpp"
 #include "Graphics/Images.hpp"
+#include "Graphics/Events.hpp"
+#include "Graphics/Surfaces.hpp"
+
+
 
 
 int main( int argc, char* args[] )
