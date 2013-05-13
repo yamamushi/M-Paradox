@@ -19,6 +19,9 @@
 		748135AC17405E31006D66E7 /* SDL_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 748135A917405E31006D66E7 /* SDL_image.framework */; };
 		748135AD17405E31006D66E7 /* SDL_mixer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 748135AA17405E31006D66E7 /* SDL_mixer.framework */; };
 		748135AE17405E31006D66E7 /* SDL_ttf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 748135AB17405E31006D66E7 /* SDL_ttf.framework */; };
+		748135B41740658A006D66E7 /* Window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 748135B21740658A006D66E7 /* Window.cpp */; };
+		748135B717406639006D66E7 /* Images.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 748135B517406639006D66E7 /* Images.cpp */; };
+		748135B91740680B006D66E7 /* Functions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 748135B81740680B006D66E7 /* Functions.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -78,6 +81,12 @@
 		748135AA17405E31006D66E7 /* SDL_mixer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL_mixer.framework; path = ../../../../../Library/Frameworks/SDL_mixer.framework; sourceTree = "<group>"; };
 		748135AB17405E31006D66E7 /* SDL_ttf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL_ttf.framework; path = ../../../../../Library/Frameworks/SDL_ttf.framework; sourceTree = "<group>"; };
 		748135B0174063E5006D66E7 /* Readme */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme; sourceTree = "<group>"; };
+		748135B117406506006D66E7 /* Functions.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Functions.hpp; sourceTree = "<group>"; };
+		748135B21740658A006D66E7 /* Window.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Window.cpp; sourceTree = "<group>"; };
+		748135B31740658A006D66E7 /* Window.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Window.hpp; sourceTree = "<group>"; };
+		748135B517406639006D66E7 /* Images.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Images.cpp; sourceTree = "<group>"; };
+		748135B617406639006D66E7 /* Images.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Images.hpp; sourceTree = "<group>"; };
+		748135B81740680B006D66E7 /* Functions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Functions.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,6 +225,12 @@
 			isa = PBXGroup;
 			children = (
 				748135B0174063E5006D66E7 /* Readme */,
+				748135B117406506006D66E7 /* Functions.hpp */,
+				748135B21740658A006D66E7 /* Window.cpp */,
+				748135B31740658A006D66E7 /* Window.hpp */,
+				748135B517406639006D66E7 /* Images.cpp */,
+				748135B617406639006D66E7 /* Images.hpp */,
+				748135B81740680B006D66E7 /* Functions.cpp */,
 			);
 			path = Graphics;
 			sourceTree = "<group>";
@@ -301,6 +316,9 @@
 			files = (
 				7481359317405984006D66E7 /* client_main.cpp in Sources */,
 				7481359D17405A47006D66E7 /* SDLMain.m in Sources */,
+				748135B41740658A006D66E7 /* Window.cpp in Sources */,
+				748135B717406639006D66E7 /* Images.cpp in Sources */,
+				748135B91740680B006D66E7 /* Functions.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
