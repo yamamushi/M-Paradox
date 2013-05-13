@@ -9,8 +9,6 @@
 //
 
 #include "Functions.hpp"
-#include "Surfaces.hpp"
-#include "Events.hpp"
 #include "Images.hpp"
 #include "SDL/SDL.h"
 #include "SDL_image/SDL_image.h"

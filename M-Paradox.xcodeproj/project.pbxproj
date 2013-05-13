@@ -23,8 +23,6 @@
 		748135B717406639006D66E7 /* Images.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 748135B517406639006D66E7 /* Images.cpp */; };
 		748135B91740680B006D66E7 /* Functions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 748135B81740680B006D66E7 /* Functions.cpp */; };
 		748135BB17406A20006D66E7 /* nostromo.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 748135BA17406A11006D66E7 /* nostromo.jpg */; };
-		748135BE174086B4006D66E7 /* Surfaces.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 748135BC174086B4006D66E7 /* Surfaces.cpp */; };
-		748135C117408720006D66E7 /* Events.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 748135BF17408720006D66E7 /* Events.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -92,10 +90,6 @@
 		748135B617406639006D66E7 /* Images.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Images.hpp; sourceTree = "<group>"; };
 		748135B81740680B006D66E7 /* Functions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Functions.cpp; sourceTree = "<group>"; };
 		748135BA17406A11006D66E7 /* nostromo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nostromo.jpg; sourceTree = "<group>"; };
-		748135BC174086B4006D66E7 /* Surfaces.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Surfaces.cpp; sourceTree = "<group>"; };
-		748135BD174086B4006D66E7 /* Surfaces.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Surfaces.hpp; sourceTree = "<group>"; };
-		748135BF17408720006D66E7 /* Events.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Events.cpp; sourceTree = "<group>"; };
-		748135C017408720006D66E7 /* Events.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Events.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,10 +235,6 @@
 				748135B31740658A006D66E7 /* Window.hpp */,
 				748135B517406639006D66E7 /* Images.cpp */,
 				748135B617406639006D66E7 /* Images.hpp */,
-				748135BC174086B4006D66E7 /* Surfaces.cpp */,
-				748135BD174086B4006D66E7 /* Surfaces.hpp */,
-				748135BF17408720006D66E7 /* Events.cpp */,
-				748135C017408720006D66E7 /* Events.hpp */,
 			);
 			path = Graphics;
 			sourceTree = "<group>";
@@ -333,8 +323,6 @@
 				748135B41740658A006D66E7 /* Window.cpp in Sources */,
 				748135B717406639006D66E7 /* Images.cpp in Sources */,
 				748135B91740680B006D66E7 /* Functions.cpp in Sources */,
-				748135BE174086B4006D66E7 /* Surfaces.cpp in Sources */,
-				748135C117408720006D66E7 /* Events.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
