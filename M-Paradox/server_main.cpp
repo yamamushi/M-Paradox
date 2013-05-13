@@ -1,42 +1,52 @@
 //
 //  main.cpp
-//  Server
+//  M-Paradox
 //
-//  Created by Jonathan Rumion on 10/8/12.
-//  Copyright (c) 2012 Jonathan Rumion. All rights reserved.
+//  Created by Jonathan Rumion on 5/6/13.
+//  Copyright (c) 2013 TAP. All rights reserved.
 //
 
+#include <algorithm>
+#include <cstdlib>
+#include <deque>
 #include <iostream>
-#include "BoostLibs.h"
-#include "ServerSocket.h"
+#include <list>
+#include <set>
+#include <boost/bind.hpp>
+#include <boost/shared_ptr.hpp>
+#include <boost/enable_shared_from_this.hpp>
+#include <boost/asio.hpp>
+#include "./Network/chat_message.hpp"
+#include "./Network/chat_server.hpp"
 
 
-
-
-
-using namespace std;
-
-int main(int argc, const char * argv[])
+int main(int argc, char* argv[])
 {
-    
-    cout << "Testing Boost ASIO" << endl;
-    setlocale(LC_ALL, "");
-    
     try
     {
+       /* if (argc < 2)
+        {
+            std::cerr << "Usage: chat_server <port> [<port> ...]\n";
+            return 1;
+        } */
+        
         boost::asio::io_service io_service;
-        tcp::endpoint endpoint(tcp::v4(), 5250);
-        boost::asio::signal_set signals(io_service, SIGINT, SIGTERM);
-        signals.async_wait(boost::bind(&boost::asio::io_service::stop, &io_service));
-        game_server server(io_service, endpoint);
+        
+        chat_server_list servers;
+        //for (int i = 1; i < argc; ++i)
+       // {
+            using namespace std; // For atoi.
+            tcp::endpoint endpoint(tcp::v4(), 2063); //atoi(argv[i]));
+            chat_server_ptr server(new chat_server(io_service, endpoint));
+            servers.push_back(server);
+       // }
+        
         io_service.run();
     }
     catch (std::exception& e)
     {
-        std::cerr << e.what() << std::endl;
+        std::cerr << "Exception: " << e.what() << "\n";
     }
-    
     
     return 0;
 }
-

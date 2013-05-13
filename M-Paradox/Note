@@ -1,4 +1,0 @@
-Several header files may make references to The ASCII Project. 
-
-This is because they were taken as template material from my experimental branch of "The ASCII Project". This material didn't suit that project properly, however it serves as the basis for our "curses-like" telnet interface.
-
