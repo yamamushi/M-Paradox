@@ -9,22 +9,13 @@
 /* Begin PBXBuildFile section */
 		740A41891738113500890613 /* server_main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 740A41881738113500890613 /* server_main.cpp */; };
 		740A418B1738113500890613 /* M_Paradox.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 740A418A1738113500890613 /* M_Paradox.1 */; };
-		7481358917405500006D66E7 /* chat_server.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 7481358717405500006D66E7 /* chat_server.hpp */; };
-		7481359317405984006D66E7 /* client_main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7481359217405984006D66E7 /* client_main.cpp */; };
-		7481359517405984006D66E7 /* M_Paradox_Client.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7481359417405984006D66E7 /* M_Paradox_Client.1 */; };
-		7481359D17405A47006D66E7 /* SDLMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 7481359C17405A47006D66E7 /* SDLMain.m */; };
-		748135A017405A8B006D66E7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7481359F17405A8B006D66E7 /* Cocoa.framework */; };
-		748135A217405A9B006D66E7 /* SDL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 748135A117405A9B006D66E7 /* SDL.framework */; };
-		748135A817405C79006D66E7 /* loading.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 748135A617405C60006D66E7 /* loading.png */; };
-		748135AC17405E31006D66E7 /* SDL_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 748135A917405E31006D66E7 /* SDL_image.framework */; };
-		748135AD17405E31006D66E7 /* SDL_mixer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 748135AA17405E31006D66E7 /* SDL_mixer.framework */; };
-		748135AE17405E31006D66E7 /* SDL_ttf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 748135AB17405E31006D66E7 /* SDL_ttf.framework */; };
-		748135B41740658A006D66E7 /* Window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 748135B21740658A006D66E7 /* Window.cpp */; };
-		748135B717406639006D66E7 /* Images.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 748135B517406639006D66E7 /* Images.cpp */; };
-		748135B91740680B006D66E7 /* Functions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 748135B81740680B006D66E7 /* Functions.cpp */; };
-		748135BB17406A20006D66E7 /* nostromo.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 748135BA17406A11006D66E7 /* nostromo.jpg */; };
-		748135BE174086B4006D66E7 /* Surfaces.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 748135BC174086B4006D66E7 /* Surfaces.cpp */; };
-		748135C117408720006D66E7 /* Events.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 748135BF17408720006D66E7 /* Events.cpp */; };
+		74813609174097C2006D66E7 /* ServerSocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 74813606174097C2006D66E7 /* ServerSocket.cpp */; };
+		7481360A174097C2006D66E7 /* Widgets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 74813607174097C2006D66E7 /* Widgets.cpp */; };
+		7481360B174097C2006D66E7 /* Window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 74813608174097C2006D66E7 /* Window.cpp */; };
+		74813611174097C8006D66E7 /* AnsiTerm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7481360C174097C8006D66E7 /* AnsiTerm.cpp */; };
+		74813612174097C8006D66E7 /* Display.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7481360D174097C8006D66E7 /* Display.cpp */; };
+		74813613174097C8006D66E7 /* IAC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7481360E174097C8006D66E7 /* IAC.cpp */; };
+		74813614174097C8006D66E7 /* Keyboard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7481360F174097C8006D66E7 /* Keyboard.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -38,27 +29,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
-		7481358E17405984006D66E7 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
-			files = (
-				7481359517405984006D66E7 /* M_Paradox_Client.1 in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-		};
-		748135A717405C6E006D66E7 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = Data/Images/Backgrounds;
-			dstSubfolderSpec = 7;
-			files = (
-				748135BB17406A20006D66E7 /* nostromo.jpg in CopyFiles */,
-				748135A817405C79006D66E7 /* loading.png in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -67,23 +37,14 @@
 		740A418A1738113500890613 /* M_Paradox.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = M_Paradox.1; sourceTree = "<group>"; };
 		740A41911738121700890613 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		740A4198173888AC00890613 /* Readme */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme; sourceTree = "<group>"; };
-		740A4199173888B200890613 /* Readme */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme; sourceTree = "<group>"; };
 		748135851740533E006D66E7 /* Readme */ = {isa = PBXFileReference; lastKnownFileType = text; path = Readme; sourceTree = "<group>"; };
-		74813586174054C7006D66E7 /* chat_message.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = chat_message.hpp; sourceTree = "<group>"; };
-		7481358717405500006D66E7 /* chat_server.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = chat_server.hpp; sourceTree = "<group>"; };
-		7481359017405984006D66E7 /* M-Paradox-Client */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "M-Paradox-Client"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7481359217405984006D66E7 /* client_main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = client_main.cpp; path = "M-Paradox-SDL-Client/client_main.cpp"; sourceTree = SOURCE_ROOT; };
 		7481359417405984006D66E7 /* M_Paradox_Client.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = M_Paradox_Client.1; sourceTree = "<group>"; };
 		7481359A17405A47006D66E7 /* ReadMeDevLite.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReadMeDevLite.txt; sourceTree = "<group>"; };
 		7481359B17405A47006D66E7 /* SDLMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDLMain.h; sourceTree = "<group>"; };
 		7481359C17405A47006D66E7 /* SDLMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDLMain.m; sourceTree = "<group>"; };
 		7481359E17405A51006D66E7 /* License.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = License.rtf; sourceTree = "<group>"; };
-		7481359F17405A8B006D66E7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		748135A117405A9B006D66E7 /* SDL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL.framework; path = ../../../../../Library/Frameworks/SDL.framework; sourceTree = "<group>"; };
 		748135A617405C60006D66E7 /* loading.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loading.png; sourceTree = "<group>"; };
-		748135A917405E31006D66E7 /* SDL_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL_image.framework; path = ../../../../../Library/Frameworks/SDL_image.framework; sourceTree = "<group>"; };
-		748135AA17405E31006D66E7 /* SDL_mixer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL_mixer.framework; path = ../../../../../Library/Frameworks/SDL_mixer.framework; sourceTree = "<group>"; };
-		748135AB17405E31006D66E7 /* SDL_ttf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL_ttf.framework; path = ../../../../../Library/Frameworks/SDL_ttf.framework; sourceTree = "<group>"; };
 		748135B0174063E5006D66E7 /* Readme */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme; sourceTree = "<group>"; };
 		748135B117406506006D66E7 /* Functions.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Functions.hpp; sourceTree = "<group>"; };
 		748135B21740658A006D66E7 /* Window.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Window.cpp; sourceTree = "<group>"; };
@@ -96,6 +57,28 @@
 		748135BD174086B4006D66E7 /* Surfaces.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Surfaces.hpp; sourceTree = "<group>"; };
 		748135BF17408720006D66E7 /* Events.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Events.cpp; sourceTree = "<group>"; };
 		748135C017408720006D66E7 /* Events.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Events.hpp; sourceTree = "<group>"; };
+		748135C217408EC4006D66E7 /* nostromo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nostromo.png; sourceTree = "<group>"; };
+		748135F9174097B0006D66E7 /* AnsiConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AnsiConstants.h; path = "M-Paradox/Console/AnsiConstants.h"; sourceTree = SOURCE_ROOT; };
+		748135FA174097B0006D66E7 /* AnsiTerm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnsiTerm.h; sourceTree = "<group>"; };
+		748135FB174097B0006D66E7 /* BoostLibs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BoostLibs.h; sourceTree = "<group>"; };
+		748135FC174097B0006D66E7 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		748135FD174097B0006D66E7 /* Display.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Display.h; sourceTree = "<group>"; };
+		748135FE174097B0006D66E7 /* IAC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IAC.h; sourceTree = "<group>"; };
+		748135FF174097B0006D66E7 /* Keyboard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Keyboard.h; sourceTree = "<group>"; };
+		74813600174097B0006D66E7 /* Readme.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Readme.txt; sourceTree = "<group>"; };
+		74813601174097B0006D66E7 /* screen_constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = screen_constants.h; sourceTree = "<group>"; };
+		74813602174097B0006D66E7 /* ServerSocket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServerSocket.h; sourceTree = "<group>"; };
+		74813603174097B0006D66E7 /* UnicodeConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnicodeConstants.h; sourceTree = "<group>"; };
+		74813604174097B0006D66E7 /* Window.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Window.h; sourceTree = "<group>"; };
+		74813605174097B0006D66E7 /* Widgets.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Widgets.h; sourceTree = "<group>"; };
+		74813606174097C2006D66E7 /* ServerSocket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ServerSocket.cpp; sourceTree = "<group>"; };
+		74813607174097C2006D66E7 /* Widgets.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Widgets.cpp; sourceTree = "<group>"; };
+		74813608174097C2006D66E7 /* Window.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Window.cpp; sourceTree = "<group>"; };
+		7481360C174097C8006D66E7 /* AnsiTerm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AnsiTerm.cpp; path = "M-Paradox/Console/AnsiTerm.cpp"; sourceTree = SOURCE_ROOT; };
+		7481360D174097C8006D66E7 /* Display.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Display.cpp; sourceTree = "<group>"; };
+		7481360E174097C8006D66E7 /* IAC.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IAC.cpp; sourceTree = "<group>"; };
+		7481360F174097C8006D66E7 /* Keyboard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Keyboard.cpp; sourceTree = "<group>"; };
+		7481361717409E62006D66E7 /* Note */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Note; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,29 +89,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7481358D17405984006D66E7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				748135AC17405E31006D66E7 /* SDL_image.framework in Frameworks */,
-				748135AD17405E31006D66E7 /* SDL_mixer.framework in Frameworks */,
-				748135AE17405E31006D66E7 /* SDL_ttf.framework in Frameworks */,
-				748135A217405A9B006D66E7 /* SDL.framework in Frameworks */,
-				748135A017405A8B006D66E7 /* Cocoa.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		740A417C1738113500890613 = {
 			isa = PBXGroup;
 			children = (
-				748135A917405E31006D66E7 /* SDL_image.framework */,
-				748135AA17405E31006D66E7 /* SDL_mixer.framework */,
-				748135AB17405E31006D66E7 /* SDL_ttf.framework */,
-				748135A117405A9B006D66E7 /* SDL.framework */,
-				7481359F17405A8B006D66E7 /* Cocoa.framework */,
 				740A41871738113500890613 /* M-Paradox */,
 				7481359117405984006D66E7 /* M-Paradox-SDL-Client */,
 				740A41861738113500890613 /* Products */,
@@ -140,7 +106,6 @@
 			isa = PBXGroup;
 			children = (
 				740A41851738113500890613 /* M-Paradox */,
-				7481359017405984006D66E7 /* M-Paradox-Client */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -148,11 +113,13 @@
 		740A41871738113500890613 /* M-Paradox */ = {
 			isa = PBXGroup;
 			children = (
+				748136161740988B006D66E7 /* Console */,
+				748135F81740979A006D66E7 /* Networking */,
 				748135841740533E006D66E7 /* Accounting */,
 				740A41931738128100890613 /* File IO */,
-				740A41941738128100890613 /* Network */,
 				740A41881738113500890613 /* server_main.cpp */,
 				740A418A1738113500890613 /* M_Paradox.1 */,
+				7481361717409E62006D66E7 /* Note */,
 			);
 			path = "M-Paradox";
 			sourceTree = "<group>";
@@ -163,16 +130,6 @@
 				740A4198173888AC00890613 /* Readme */,
 			);
 			path = "File IO";
-			sourceTree = "<group>";
-		};
-		740A41941738128100890613 /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				740A4199173888B200890613 /* Readme */,
-				74813586174054C7006D66E7 /* chat_message.hpp */,
-				7481358717405500006D66E7 /* chat_server.hpp */,
-			);
-			path = Network;
 			sourceTree = "<group>";
 		};
 		748135841740533E006D66E7 /* Accounting */ = {
@@ -226,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				748135BA17406A11006D66E7 /* nostromo.jpg */,
+				748135C217408EC4006D66E7 /* nostromo.png */,
 				748135A617405C60006D66E7 /* loading.png */,
 			);
 			path = Backgrounds;
@@ -249,6 +207,40 @@
 			path = Graphics;
 			sourceTree = "<group>";
 		};
+		748135F81740979A006D66E7 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				74813606174097C2006D66E7 /* ServerSocket.cpp */,
+				7481360E174097C8006D66E7 /* IAC.cpp */,
+				748135FB174097B0006D66E7 /* BoostLibs.h */,
+				748135FC174097B0006D66E7 /* Constants.h */,
+				748135FE174097B0006D66E7 /* IAC.h */,
+				74813600174097B0006D66E7 /* Readme.txt */,
+				74813602174097B0006D66E7 /* ServerSocket.h */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		748136161740988B006D66E7 /* Console */ = {
+			isa = PBXGroup;
+			children = (
+				748135F9174097B0006D66E7 /* AnsiConstants.h */,
+				7481360C174097C8006D66E7 /* AnsiTerm.cpp */,
+				748135FA174097B0006D66E7 /* AnsiTerm.h */,
+				7481360D174097C8006D66E7 /* Display.cpp */,
+				748135FD174097B0006D66E7 /* Display.h */,
+				7481360F174097C8006D66E7 /* Keyboard.cpp */,
+				748135FF174097B0006D66E7 /* Keyboard.h */,
+				74813601174097B0006D66E7 /* screen_constants.h */,
+				74813603174097B0006D66E7 /* UnicodeConstants.h */,
+				74813607174097C2006D66E7 /* Widgets.cpp */,
+				74813605174097B0006D66E7 /* Widgets.h */,
+				74813608174097C2006D66E7 /* Window.cpp */,
+				74813604174097B0006D66E7 /* Window.h */,
+			);
+			path = Console;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -267,24 +259,6 @@
 			name = "M-Paradox";
 			productName = "M-Paradox";
 			productReference = 740A41851738113500890613 /* M-Paradox */;
-			productType = "com.apple.product-type.tool";
-		};
-		7481358F17405984006D66E7 /* M-Paradox-Client */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7481359617405984006D66E7 /* Build configuration list for PBXNativeTarget "M-Paradox-Client" */;
-			buildPhases = (
-				7481358C17405984006D66E7 /* Sources */,
-				7481358D17405984006D66E7 /* Frameworks */,
-				7481358E17405984006D66E7 /* CopyFiles */,
-				748135A717405C6E006D66E7 /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "M-Paradox-Client";
-			productName = "M-Paradox-Client";
-			productReference = 7481359017405984006D66E7 /* M-Paradox-Client */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -309,7 +283,6 @@
 			projectRoot = "";
 			targets = (
 				740A41841738113500890613 /* M-Paradox */,
-				7481358F17405984006D66E7 /* M-Paradox-Client */,
 			);
 		};
 /* End PBXProject section */
@@ -320,21 +293,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				740A41891738113500890613 /* server_main.cpp in Sources */,
-				7481358917405500006D66E7 /* chat_server.hpp in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7481358C17405984006D66E7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7481359317405984006D66E7 /* client_main.cpp in Sources */,
-				7481359D17405A47006D66E7 /* SDLMain.m in Sources */,
-				748135B41740658A006D66E7 /* Window.cpp in Sources */,
-				748135B717406639006D66E7 /* Images.cpp in Sources */,
-				748135B91740680B006D66E7 /* Functions.cpp in Sources */,
-				748135BE174086B4006D66E7 /* Surfaces.cpp in Sources */,
-				748135C117408720006D66E7 /* Events.cpp in Sources */,
+				74813609174097C2006D66E7 /* ServerSocket.cpp in Sources */,
+				7481360A174097C2006D66E7 /* Widgets.cpp in Sources */,
+				7481360B174097C2006D66E7 /* Window.cpp in Sources */,
+				74813611174097C8006D66E7 /* AnsiTerm.cpp in Sources */,
+				74813612174097C8006D66E7 /* Display.cpp in Sources */,
+				74813613174097C8006D66E7 /* IAC.cpp in Sources */,
+				74813614174097C8006D66E7 /* Keyboard.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,24 +409,6 @@
 			};
 			name = Release;
 		};
-		7481359717405984006D66E7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		7481359817405984006D66E7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -482,14 +429,6 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
-		};
-		7481359617405984006D66E7 /* Build configuration list for PBXNativeTarget "M-Paradox-Client" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7481359717405984006D66E7 /* Debug */,
-				7481359817405984006D66E7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

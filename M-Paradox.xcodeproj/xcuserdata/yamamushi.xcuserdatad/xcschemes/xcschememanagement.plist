@@ -4,11 +4,6 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>M-Paradox-Client.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
-		</dict>
 		<key>M-Paradox.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -23,6 +18,11 @@
 			<true/>
 		</dict>
 		<key>7481358F17405984006D66E7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>748135C7174091E2006D66E7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
