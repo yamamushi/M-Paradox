@@ -22,6 +22,7 @@
 		748135B41740658A006D66E7 /* Window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 748135B21740658A006D66E7 /* Window.cpp */; };
 		748135B717406639006D66E7 /* Images.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 748135B517406639006D66E7 /* Images.cpp */; };
 		748135B91740680B006D66E7 /* Functions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 748135B81740680B006D66E7 /* Functions.cpp */; };
+		748135BB17406A20006D66E7 /* nostromo.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 748135BA17406A11006D66E7 /* nostromo.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -51,6 +52,7 @@
 			dstPath = Data/Images/Backgrounds;
 			dstSubfolderSpec = 7;
 			files = (
+				748135BB17406A20006D66E7 /* nostromo.jpg in CopyFiles */,
 				748135A817405C79006D66E7 /* loading.png in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -68,7 +70,7 @@
 		74813586174054C7006D66E7 /* chat_message.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = chat_message.hpp; sourceTree = "<group>"; };
 		7481358717405500006D66E7 /* chat_server.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = chat_server.hpp; sourceTree = "<group>"; };
 		7481359017405984006D66E7 /* M-Paradox-Client */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "M-Paradox-Client"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7481359217405984006D66E7 /* client_main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = client_main.cpp; path = "M-Paradox-Client/client_main.cpp"; sourceTree = SOURCE_ROOT; };
+		7481359217405984006D66E7 /* client_main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = client_main.cpp; path = "M-Paradox-SDL-Client/client_main.cpp"; sourceTree = SOURCE_ROOT; };
 		7481359417405984006D66E7 /* M_Paradox_Client.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = M_Paradox_Client.1; sourceTree = "<group>"; };
 		7481359A17405A47006D66E7 /* ReadMeDevLite.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReadMeDevLite.txt; sourceTree = "<group>"; };
 		7481359B17405A47006D66E7 /* SDLMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDLMain.h; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 		748135B517406639006D66E7 /* Images.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Images.cpp; sourceTree = "<group>"; };
 		748135B617406639006D66E7 /* Images.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Images.hpp; sourceTree = "<group>"; };
 		748135B81740680B006D66E7 /* Functions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Functions.cpp; sourceTree = "<group>"; };
+		748135BA17406A11006D66E7 /* nostromo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nostromo.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,7 +124,7 @@
 				748135A117405A9B006D66E7 /* SDL.framework */,
 				7481359F17405A8B006D66E7 /* Cocoa.framework */,
 				740A41871738113500890613 /* M-Paradox */,
-				7481359117405984006D66E7 /* M-Paradox-Client */,
+				7481359117405984006D66E7 /* M-Paradox-SDL-Client */,
 				740A41861738113500890613 /* Products */,
 				740A41911738121700890613 /* README.md */,
 			);
@@ -174,7 +177,7 @@
 			path = Accounting;
 			sourceTree = "<group>";
 		};
-		7481359117405984006D66E7 /* M-Paradox-Client */ = {
+		7481359117405984006D66E7 /* M-Paradox-SDL-Client */ = {
 			isa = PBXGroup;
 			children = (
 				748135AF174063D8006D66E7 /* Graphics */,
@@ -183,8 +186,8 @@
 				7481359217405984006D66E7 /* client_main.cpp */,
 				7481359417405984006D66E7 /* M_Paradox_Client.1 */,
 			);
-			path = "M-Paradox-Client";
-			sourceTree = "<group>";
+			path = "M-Paradox-SDL-Client";
+			sourceTree = SOURCE_ROOT;
 		};
 		7481359917405A37006D66E7 /* SDL */ = {
 			isa = PBXGroup;
@@ -216,6 +219,7 @@
 		748135A517405C60006D66E7 /* Backgrounds */ = {
 			isa = PBXGroup;
 			children = (
+				748135BA17406A11006D66E7 /* nostromo.jpg */,
 				748135A617405C60006D66E7 /* loading.png */,
 			);
 			path = Backgrounds;
@@ -226,11 +230,11 @@
 			children = (
 				748135B0174063E5006D66E7 /* Readme */,
 				748135B117406506006D66E7 /* Functions.hpp */,
+				748135B81740680B006D66E7 /* Functions.cpp */,
 				748135B21740658A006D66E7 /* Window.cpp */,
 				748135B31740658A006D66E7 /* Window.hpp */,
 				748135B517406639006D66E7 /* Images.cpp */,
 				748135B617406639006D66E7 /* Images.hpp */,
-				748135B81740680B006D66E7 /* Functions.cpp */,
 			);
 			path = Graphics;
 			sourceTree = "<group>";
