@@ -135,7 +135,7 @@ void client_connection::startSession(const boost::system::error_code& error)
         delete line_command_;
         line_command_ = new boost::asio::streambuf;
         
-        boost::asio::async_read_until(socket_, *line_command_, "*", boost::bind(&client_connection::receive_command, shared_from_this(), boost::asio::placeholders::error ));
+        boost::asio::async_read_until(socket_, *line_command_, "\r\n", boost::bind(&client_connection::receive_command, shared_from_this(), boost::asio::placeholders::error ));
         //boost::asio::async_read(socket_, boost::asio::buffer(stream, 1), boost::bind(&client_connection::receive_command, shared_from_this(), boost::asio::placeholders::error ));
     }
     else
@@ -157,7 +157,7 @@ void client_connection::receive_command(const boost::system::error_code& error)
         //std::cout << command;
 
         
-        boost::asio::async_read_until(socket_, *line_command_, "", boost::bind(&client_connection::handle_request_line, shared_from_this(), boost::asio::placeholders::error ));
+        boost::asio::async_read_until(socket_, *line_command_, "\r\n", boost::bind(&client_connection::handle_request_line, shared_from_this(), boost::asio::placeholders::error ));
     }
     else
     {
@@ -172,10 +172,10 @@ void client_connection::handle_request_line(const boost::system::error_code& err
     if (!error)
     {
         
-        std::string command, token;
+        std::string command, token, cr, lf;
         
         std::istream is(line_command_);
-        is >> command >> token ;
+        is >> command >> cr >> lf;
         cout << command << endl;
         
         std::vector<char> cmd(128);
@@ -213,7 +213,7 @@ void client_connection::handle_request_line(const boost::system::error_code& err
                                "\x1b[1;37m\x1b[6C;%,;%;;!!%%%!&!;,,,,,,;,..\x1b[0m  \x1b[34m€€€.,;;%%%;;;,.€€\n"
                                "\x1b[37m \x1b[1m\x1b[5C;%,;%;;;,,..,;;,,.\x1b[5C\x1b[0m\x1b[8C\x1b[34m€€€€€€€€€€€\n");
             
-            boost::asio::async_write(socket_, boost::asio::buffer(flower), boost::bind(&client_connection::disconnect, shared_from_this()));
+            boost::asio::async_write(socket_, boost::asio::buffer(flower), boost::bind(&client_connection::receive_command, shared_from_this(), boost::asio::placeholders::error));
             
         }
         else if( command == "t")
@@ -232,7 +232,8 @@ void client_connection::handle_request_line(const boost::system::error_code& err
         {
          //   socket_.async_read_some(boost::asio::buffer(cmd, 1), boost::bind(&client_connection::receive_command, shared_from_this(), boost::asio::placeholders::error ));
             
-            boost::asio::async_write(socket_, boost::asio::buffer(string("\x1b[23H\x1b[K\u2503$> \x1b[23;80H\u2503\x1b[23;5H")), boost::bind(&client_connection::receive_command, shared_from_this(), boost::asio::placeholders::error ));
+            // string("\x1b[23H\x1b[K\u2503$> \x1b[23;80H\u2503\x1b[23;5H")
+            boost::asio::async_write(socket_, boost::asio::buffer(string("\x1b[23H\x1b[K\u2503$> \x1b[23;80H\u2503\x1b[23;5H")), boost::bind(&client_connection::startSession, shared_from_this(), boost::asio::placeholders::error ));
         }
         
     }
