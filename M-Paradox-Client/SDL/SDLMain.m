@@ -5,7 +5,7 @@
     Feel free to customize this file to suit your needs
 */
 
-#include "SDL.h"
+#include "SDL/SDL.h"
 #include "SDLMain.h"
 #include <sys/param.h> /* for MAXPATHLEN */
 #include <unistd.h>
@@ -67,6 +67,10 @@ static NSString *getApplicationName(void)
 @interface NSApplication (SDLApplication)
 @end
 
+// We do this pragma to ignore the method implementation warnings
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wobjc-protocol-method-implementation"
+
 @implementation NSApplication (SDLApplication)
 /* Invoked from the Quit menu item */
 - (void)terminate:(id)sender
@@ -77,6 +81,9 @@ static NSString *getApplicationName(void)
     SDL_PushEvent(&event);
 }
 @end
+
+#pragma clang diagnostic pop
+
 
 /* The main class of the application, the application's delegate */
 @implementation SDLMain
@@ -310,13 +317,13 @@ static void CustomApplicationMain (int argc, char **argv)
 - (NSString *)stringByReplacingRange:(NSRange)aRange with:(NSString *)aString
 {
     unsigned int bufferSize;
-    unsigned int selfLen = [self length];
-    unsigned int aStringLen = [aString length];
+    unsigned int selfLen = (unsigned int)[self length];
+    unsigned int aStringLen = (unsigned int)[aString length];
     unichar *buffer;
     NSRange localRange;
     NSString *result;
 
-    bufferSize = selfLen + aStringLen - aRange.length;
+    bufferSize = (unsigned int)selfLen + (unsigned int)aStringLen - (unsigned int)aRange.length;
     buffer = (unichar *)NSAllocateMemoryPages(bufferSize*sizeof(unichar));
     
     /* Get first part into buffer */
