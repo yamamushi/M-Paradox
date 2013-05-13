@@ -32,7 +32,7 @@ bool init()
 bool load_files()
 {
     //Load the image
-    testing = load_image( "Data/Images/Backgrounds/nostromo.jpg" );
+    testing = load_image( "Data/Images/Backgrounds/loading.png" );
     
     //If the image didn't load
     if( testing == NULL )

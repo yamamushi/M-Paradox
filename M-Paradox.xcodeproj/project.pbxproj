@@ -77,11 +77,11 @@
 		7481359C17405A47006D66E7 /* SDLMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDLMain.m; sourceTree = "<group>"; };
 		7481359E17405A51006D66E7 /* License.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = License.rtf; sourceTree = "<group>"; };
 		7481359F17405A8B006D66E7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		748135A117405A9B006D66E7 /* SDL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL.framework; path = ../../../../../Library/Frameworks/SDL.framework; sourceTree = "<group>"; };
+		748135A117405A9B006D66E7 /* SDL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL.framework; path = /Library/Frameworks/SDL.framework; sourceTree = "<absolute>"; };
 		748135A617405C60006D66E7 /* loading.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loading.png; sourceTree = "<group>"; };
-		748135A917405E31006D66E7 /* SDL_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL_image.framework; path = ../../../../../Library/Frameworks/SDL_image.framework; sourceTree = "<group>"; };
-		748135AA17405E31006D66E7 /* SDL_mixer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL_mixer.framework; path = ../../../../../Library/Frameworks/SDL_mixer.framework; sourceTree = "<group>"; };
-		748135AB17405E31006D66E7 /* SDL_ttf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL_ttf.framework; path = ../../../../../Library/Frameworks/SDL_ttf.framework; sourceTree = "<group>"; };
+		748135A917405E31006D66E7 /* SDL_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL_image.framework; path = /Library/Frameworks/SDL_image.framework; sourceTree = "<absolute>"; };
+		748135AA17405E31006D66E7 /* SDL_mixer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL_mixer.framework; path = /Library/Frameworks/SDL_mixer.framework; sourceTree = "<absolute>"; };
+		748135AB17405E31006D66E7 /* SDL_ttf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL_ttf.framework; path = /Library/Frameworks/SDL_ttf.framework; sourceTree = "<absolute>"; };
 		748135B0174063E5006D66E7 /* Readme */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme; sourceTree = "<group>"; };
 		748135B117406506006D66E7 /* Functions.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Functions.hpp; sourceTree = "<group>"; };
 		748135B21740658A006D66E7 /* Window.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Window.cpp; sourceTree = "<group>"; };
@@ -118,12 +118,8 @@
 		740A417C1738113500890613 = {
 			isa = PBXGroup;
 			children = (
-				748135A917405E31006D66E7 /* SDL_image.framework */,
-				748135AA17405E31006D66E7 /* SDL_mixer.framework */,
-				748135AB17405E31006D66E7 /* SDL_ttf.framework */,
-				748135A117405A9B006D66E7 /* SDL.framework */,
-				7481359F17405A8B006D66E7 /* Cocoa.framework */,
-				740A41871738113500890613 /* M-Paradox */,
+				7412FAC61741507800E52B6C /* Frameworks */,
+				740A41871738113500890613 /* M-Paradox-Server */,
 				7481359117405984006D66E7 /* M-Paradox-SDL-Client */,
 				740A41861738113500890613 /* Products */,
 				740A41911738121700890613 /* README.md */,
@@ -139,7 +135,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		740A41871738113500890613 /* M-Paradox */ = {
+		740A41871738113500890613 /* M-Paradox-Server */ = {
 			isa = PBXGroup;
 			children = (
 				748135841740533E006D66E7 /* Accounting */,
@@ -148,6 +144,7 @@
 				740A41881738113500890613 /* server_main.cpp */,
 				740A418A1738113500890613 /* M_Paradox.1 */,
 			);
+			name = "M-Paradox-Server";
 			path = "M-Paradox";
 			sourceTree = "<group>";
 		};
@@ -169,6 +166,18 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		7412FAC61741507800E52B6C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				748135A917405E31006D66E7 /* SDL_image.framework */,
+				748135AA17405E31006D66E7 /* SDL_mixer.framework */,
+				748135AB17405E31006D66E7 /* SDL_ttf.framework */,
+				748135A117405A9B006D66E7 /* SDL.framework */,
+				7481359F17405A8B006D66E7 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		748135841740533E006D66E7 /* Accounting */ = {
 			isa = PBXGroup;
 			children = (
@@ -180,11 +189,11 @@
 		7481359117405984006D66E7 /* M-Paradox-SDL-Client */ = {
 			isa = PBXGroup;
 			children = (
-				748135AF174063D8006D66E7 /* Graphics */,
-				748135A317405C60006D66E7 /* Data */,
-				7481359917405A37006D66E7 /* SDL */,
 				7481359217405984006D66E7 /* client_main.cpp */,
+				748135A317405C60006D66E7 /* Data */,
+				748135AF174063D8006D66E7 /* Graphics */,
 				7481359417405984006D66E7 /* M_Paradox_Client.1 */,
+				7481359917405A37006D66E7 /* SDL */,
 			);
 			path = "M-Paradox-SDL-Client";
 			sourceTree = SOURCE_ROOT;
@@ -219,8 +228,8 @@
 		748135A517405C60006D66E7 /* Backgrounds */ = {
 			isa = PBXGroup;
 			children = (
-				748135BA17406A11006D66E7 /* nostromo.jpg */,
 				748135A617405C60006D66E7 /* loading.png */,
+				748135BA17406A11006D66E7 /* nostromo.jpg */,
 			);
 			path = Backgrounds;
 			sourceTree = "<group>";
@@ -228,13 +237,13 @@
 		748135AF174063D8006D66E7 /* Graphics */ = {
 			isa = PBXGroup;
 			children = (
-				748135B0174063E5006D66E7 /* Readme */,
-				748135B117406506006D66E7 /* Functions.hpp */,
 				748135B81740680B006D66E7 /* Functions.cpp */,
-				748135B21740658A006D66E7 /* Window.cpp */,
-				748135B31740658A006D66E7 /* Window.hpp */,
+				748135B117406506006D66E7 /* Functions.hpp */,
 				748135B517406639006D66E7 /* Images.cpp */,
 				748135B617406639006D66E7 /* Images.hpp */,
+				748135B0174063E5006D66E7 /* Readme */,
+				748135B21740658A006D66E7 /* Window.cpp */,
+				748135B31740658A006D66E7 /* Window.hpp */,
 			);
 			path = Graphics;
 			sourceTree = "<group>";
@@ -478,6 +487,7 @@
 				7481359817405984006D66E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
