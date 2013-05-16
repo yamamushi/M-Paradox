@@ -48,7 +48,7 @@ void ServerConfigParser::Parse(){
         po::options_description hidden("Hidden Options");
         hidden.add_options()
         ("data_dir", po::value<std::string>(&data_dir)->default_value("fs/"),"Data Directory")
-        ("server_port", po::value<int>(&server_port)->default_value(5250),"Server Listening Port")
+        ("server_port", po::value<int>(&server_port)->default_value(2063),"Server Listening Port")
         ("map_latitude", po::value<int>(&mapX)->default_value(100),"Map Latitude")
         ("map_longitude", po::value<int>(&mapY)->default_value(100),"Map Longitude")
         ("world_latitude", po::value<int>(&worldX)->default_value(10),"World Latitude")

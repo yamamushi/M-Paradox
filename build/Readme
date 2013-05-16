@@ -1,0 +1,3 @@
+We use this directory for testing binary builds, as I'm weary about messing with Xcode configs to place our binary here.
+
+I'll probably remove this directory from git pushes, we'll see.

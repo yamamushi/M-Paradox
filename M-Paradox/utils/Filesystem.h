@@ -8,6 +8,10 @@
  02-05-2013
  
  */
+
+#ifndef __M_Paradox__FileSystem__
+#define __M_Paradox__FileSystem__
+
 #include <string>
 
 
@@ -26,3 +30,5 @@ public:
     static bool CheckExists(std::string path);
     
 };
+
+#endif

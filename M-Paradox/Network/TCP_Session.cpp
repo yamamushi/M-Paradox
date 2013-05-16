@@ -9,7 +9,6 @@
 #include "Packets.h"
 #include "TCP_Session.h"
 #include "TCP_Participant.h"
-#include "../api/ServerAPI.h"
 #include "../utils/FileLogger.h"
 #include "../serialization/Boost_Serialization.h"
 #include <boost/bind.hpp>
@@ -17,11 +16,6 @@
 #include <memory>
 #include <iostream>
 #include <vector>
-
-
-// REMOVE THIS
-#include "../mapping/WorldMap.h"
-// REMOVE THIS
 
 
 
@@ -134,8 +128,7 @@ void TCP_Session::startRaw(){
      We'll assemble a real handshake starting here.
      
      */
-    std::shared_ptr<TileMap> rawTest_sharedptr(new TileMap(10, 10, 0, 0, 0));
-    TileMap *rawTest = rawTest_sharedptr.get();
+    std::string rawTest = "This is a Raw Test";
     
     async_data_write(rawTest, boost::bind(&TCP_Session::end, shared_from_this()));
     
