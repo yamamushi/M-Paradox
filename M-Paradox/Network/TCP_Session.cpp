@@ -11,6 +11,10 @@
 #include "TCP_Participant.h"
 #include "../utils/FileLogger.h"
 #include "../serialization/Boost_Serialization.h"
+#include "../Messages/banner.h"
+#include "../Messages/DefaultMessages.h"
+#include "../parsers/ServerConfig.h"
+#include "../Server/ServerInit.h"
 #include <boost/bind.hpp>
 #include <boost/enable_shared_from_this.hpp>
 #include <memory>
@@ -62,13 +66,18 @@ std::string TCP_Session::getClientIP(){
 // Start the async cycle
 void TCP_Session::kickStart(){
     
-    boost::asio::async_write(this->tcp_socket, boost::asio::buffer(std::string("Welcome to The ASCII Project\n\n"
-                                                                               "Commands Available: \n"
-                                                                               "------------------- \n\n"
-                                                                               "term \n"
-                                                                               "raw \n"
-                                                                               "quit \r\n\r\n")),
+    extern std::string rootFSPath;
+    Banner banner(rootFSPath);
+    // We can put flower_MSG here to show off the "animations" (ansi escape codes)
+    boost::asio::async_write(this->tcp_socket, boost::asio::buffer(banner.print_banner() + loginMenu_MSG),
                              boost::bind(&TCP_Session::startSession, shared_from_this(), boost::asio::placeholders::error ));
+    
+    /*
+     "\n\nCommands Available: \n"
+     "------------------- \n\n"
+     "login \n"
+     "logout \n"
+     "quit \r\n\r\n" */
     
 }
 
@@ -99,11 +108,12 @@ void TCP_Session::initMode(const boost::system::error_code& error)
         
         fileLogger->ErrorLog("Client " + clientIP + ": INIT - " + modeRequest);
         
-        if(modeRequest == "term")
+        if(modeRequest == "logout" || modeRequest == "quit" || modeRequest == "exit" )
         {
-            tcp_socket.shutdown(tcp_socket.shutdown_both);
+            //tcp_socket.shutdown(tcp_socket.shutdown_both);
+            end();
         }
-        if(modeRequest == "raw")
+        if(modeRequest == "login")
         {
             startRaw();
         }

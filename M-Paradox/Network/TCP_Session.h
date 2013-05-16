@@ -71,6 +71,12 @@ public:
     
     void startRaw();
     
+    
+    // The following set of functions is for sending raw text_archive serialized
+    // Objects over the network for deserialization and handling on the client
+    // Currently these aren't used, as we don't have immediate plans for writing
+    // A Client.
+    
     /// Asynchronously write a data structure to the socket.
     template <typename T, typename Handler>
     void async_data_write(const T& t, Handler handler)

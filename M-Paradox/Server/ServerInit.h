@@ -12,7 +12,7 @@
 #include <string>
 
 void ServerInit(int argc, char *argv[]);
-void DirectoryInit(std::string rootFSPath);
+bool DirectoryInit(std::string rootFSPath);
 void NetInit(int port);
 
 #endif /* defined(__M_Paradox__ServerInit__) */
