@@ -23,6 +23,7 @@
 		7407FAB01744F00C00997452 /* banner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7407FAAE1744F00C00997452 /* banner.cpp */; };
 		740A41891738113500890613 /* server_main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 740A41881738113500890613 /* server_main.cpp */; };
 		740A418B1738113500890613 /* M_Paradox.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 740A418A1738113500890613 /* M_Paradox.1 */; };
+		744F3834174A58A100FBA648 /* ANSI_Escape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 744F3833174A58A100FBA648 /* ANSI_Escape.cpp */; };
 		748135A017405A8B006D66E7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7481359F17405A8B006D66E7 /* Cocoa.framework */; };
 		748135A217405A9B006D66E7 /* SDL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 748135A117405A9B006D66E7 /* SDL.framework */; };
 		748135AC17405E31006D66E7 /* SDL_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 748135A917405E31006D66E7 /* SDL_image.framework */; };
@@ -107,6 +108,9 @@
 		740A41911738121700890613 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		740A4198173888AC00890613 /* Readme */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme; sourceTree = "<group>"; };
 		740A4199173888B200890613 /* Readme */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme; sourceTree = "<group>"; };
+		744F3831174A522C00FBA648 /* IAC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAC.h; sourceTree = "<group>"; };
+		744F3832174A538100FBA648 /* ANSI_Escape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSI_Escape.h; sourceTree = "<group>"; };
+		744F3833174A58A100FBA648 /* ANSI_Escape.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ANSI_Escape.cpp; sourceTree = "<group>"; };
 		748135851740533E006D66E7 /* Readme */ = {isa = PBXFileReference; lastKnownFileType = text; path = Readme; sourceTree = "<group>"; };
 		7481359017405984006D66E7 /* M-Paradox-Client */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "M-Paradox-Client"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7481359F17405A8B006D66E7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -209,6 +213,9 @@
 				7407FAAE1744F00C00997452 /* banner.cpp */,
 				7407FAAF1744F00C00997452 /* banner.h */,
 				7407FAB11744F05A00997452 /* DefaultMessages.h */,
+				744F3831174A522C00FBA648 /* IAC.h */,
+				744F3832174A538100FBA648 /* ANSI_Escape.h */,
+				744F3833174A58A100FBA648 /* ANSI_Escape.cpp */,
 			);
 			path = Messages;
 			sourceTree = "<group>";
@@ -387,6 +394,7 @@
 				7407FA9F1744B6EF00997452 /* TCP_Pool.cpp in Sources */,
 				7407FAA01744B6EF00997452 /* TCP_Session.cpp in Sources */,
 				7407FAB01744F00C00997452 /* banner.cpp in Sources */,
+				744F3834174A58A100FBA648 /* ANSI_Escape.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

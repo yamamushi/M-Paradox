@@ -11,8 +11,10 @@
 #include "TCP_Participant.h"
 #include "../utils/FileLogger.h"
 #include "../serialization/Boost_Serialization.h"
-#include "../Messages/banner.h"
 #include "../Messages/DefaultMessages.h"
+#include "../Messages/banner.h"
+#include "../Messages/ANSI_Escape.h"
+#include "../Messages/IAC.h"
 #include "../parsers/ServerConfig.h"
 #include "../Server/ServerInit.h"
 #include <boost/bind.hpp>
@@ -72,13 +74,6 @@ void TCP_Session::kickStart(){
     boost::asio::async_write(this->tcp_socket, boost::asio::buffer(banner.print_banner() + loginMenu_MSG),
                              boost::bind(&TCP_Session::startSession, shared_from_this(), boost::asio::placeholders::error ));
     
-    /*
-     "\n\nCommands Available: \n"
-     "------------------- \n\n"
-     "login \n"
-     "logout \n"
-     "quit \r\n\r\n" */
-    
 }
 
 
@@ -112,6 +107,10 @@ void TCP_Session::initMode(const boost::system::error_code& error)
         {
             //tcp_socket.shutdown(tcp_socket.shutdown_both);
             end();
+        }
+        if(modeRequest == "clear")
+        {
+            boost::asio::async_write(this->tcp_socket, boost::asio::buffer(clearScreen_ANS+resetCursor_ANS), boost::bind(&TCP_Session::end, shared_from_this()));
         }
         if(modeRequest == "login")
         {

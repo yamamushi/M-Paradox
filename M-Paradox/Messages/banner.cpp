@@ -10,6 +10,7 @@
 #include <sstream>
 #include <fstream>
 #include <string>
+#include "DefaultMessages.h"
 #include "banner.h"
 
 
@@ -25,12 +26,11 @@ std::string Banner::print_banner(){
         
         file.close();
         
-        //std::cout << buffer.str() << std::endl;
         return buffer.str();
         
     }
     else {
-        return "Server is missing a banner, please contact the Server Administrator about this issue";
+        return defaultBanner_MSG;
     }
     
 }

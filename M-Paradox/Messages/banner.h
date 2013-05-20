@@ -1,3 +1,4 @@
+#pragma once
 //
 //  banner.h
 //  M-Paradox
