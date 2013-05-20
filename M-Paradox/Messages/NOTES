@@ -1,0 +1,5 @@
+Our next task is to adapt the IAC codes to accept NAWS requests
+
+http://www.ietf.org/rfc/rfc1073.txt
+
+We'll start by outputting the size of the window from the client back to the server :)

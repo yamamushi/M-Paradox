@@ -18,7 +18,6 @@
 const std::string clearScreen_ANS("\x1b[2J");
 const std::string resetCursor_ANS("\x1b[;f");
 
-std::string SelectGraphicRendition_ANS(int code);
 
 // Colors
 
@@ -34,13 +33,13 @@ enum ANS_COLORS{
     
 };
 
-const std::string colorBlack_ANS("");
-const std::string colorRed_ANS("");
-const std::string colorGreen_ANS("");
-const std::string colorYellow_ANS("");
-const std::string colorBlue_ANS("");
-const std::string colorMagenta_ANS("");
-const std::string colorCyan_ANS("");
-const std::string colorWhite_ANS("");
+const std::string colorBlack_ANS("\x1b[30m");
+const std::string colorRed_ANS("\x1b[31m");
+const std::string colorGreen_ANS("\x1b[32m");
+const std::string colorYellow_ANS("\x1b[33m");
+const std::string colorBlue_ANS("\x1b[34m");
+const std::string colorMagenta_ANS("\x1b[35m");
+const std::string colorCyan_ANS("\x1b[36m");
+const std::string colorWhite_ANS("\x1b[37m");
 
 #endif
