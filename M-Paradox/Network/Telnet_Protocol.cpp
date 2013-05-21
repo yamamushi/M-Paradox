@@ -7,3 +7,5 @@
 //
 
 #include "Telnet_Protocol.h"
+#include "../Messages/IAC.h"
+

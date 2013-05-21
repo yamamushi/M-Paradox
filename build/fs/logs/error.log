@@ -247,3 +247,370 @@
 2013-05-20 08:11:37 - Server is Now Running, Congratulations!
 2013-05-20 08:11:37 - Attempting to Start Network Module on Port: 2063
 2013-05-20 08:11:37 - Network Module Started and Listening on Port: 2063
+2013-05-20 18:44:32 - Server Startup Initiated
+2013-05-20 18:44:32 - Server Configuration Read
+2013-05-20 18:44:32 - Checking Filesystem Paths
+2013-05-20 18:44:32 - Filesystem Paths Verified
+2013-05-20 18:44:32 - Server Configuration Setup Complete
+2013-05-20 18:44:32 - Server is Now Running, Congratulations!
+2013-05-20 18:44:32 - Attempting to Start Network Module on Port: 2063
+2013-05-20 18:44:32 - Network Module Started and Listening on Port: 2063
+2013-05-20 18:44:38 - Client 127.0.0.1: Connected
+2013-05-20 18:44:42 - Client 127.0.0.1: INIT - q
+2013-05-20 18:44:42 - Client 127.0.0.1: Disconnected
+2013-05-20 18:45:49 - Server Startup Initiated
+2013-05-20 18:45:49 - Server Configuration Read
+2013-05-20 18:45:49 - Checking Filesystem Paths
+2013-05-20 18:45:49 - Filesystem Paths Verified
+2013-05-20 18:45:49 - Server Configuration Setup Complete
+2013-05-20 18:45:49 - Server is Now Running, Congratulations!
+2013-05-20 18:45:49 - Attempting to Start Network Module on Port: 2063
+2013-05-20 18:45:49 - Network Module Started and Listening on Port: 2063
+2013-05-20 18:45:51 - Client 127.0.0.1: Connected
+2013-05-20 18:45:57 - Client 127.0.0.1: Disconnected
+2013-05-20 18:48:33 - Server Startup Initiated
+2013-05-20 18:48:33 - Server Configuration Read
+2013-05-20 18:48:33 - Checking Filesystem Paths
+2013-05-20 18:48:33 - Filesystem Paths Verified
+2013-05-20 18:48:33 - Server Configuration Setup Complete
+2013-05-20 18:48:33 - Server is Now Running, Congratulations!
+2013-05-20 18:48:33 - Attempting to Start Network Module on Port: 2063
+2013-05-20 18:48:33 - Network Module Started and Listening on Port: 2063
+2013-05-20 18:48:34 - Client 127.0.0.1: Connected
+2013-05-20 18:48:42 - Client 127.0.0.1: Disconnected
+2013-05-20 18:49:59 - Client 127.0.0.1: Connected
+2013-05-20 18:50:13 - Client 127.0.0.1: Disconnected
+2013-05-20 18:50:29 - Server Startup Initiated
+2013-05-20 18:50:29 - Server Configuration Read
+2013-05-20 18:50:29 - Checking Filesystem Paths
+2013-05-20 18:50:29 - Filesystem Paths Verified
+2013-05-20 18:50:29 - Server Configuration Setup Complete
+2013-05-20 18:50:29 - Server is Now Running, Congratulations!
+2013-05-20 18:50:29 - Attempting to Start Network Module on Port: 2063
+2013-05-20 18:50:29 - Network Module Started and Listening on Port: 2063
+2013-05-20 18:50:30 - Client 127.0.0.1: Connected
+2013-05-20 18:50:36 - Client 127.0.0.1: Disconnected
+2013-05-20 19:01:31 - Server Startup Initiated
+2013-05-20 19:01:31 - Server Configuration Read
+2013-05-20 19:01:31 - Checking Filesystem Paths
+2013-05-20 19:01:31 - Filesystem Paths Verified
+2013-05-20 19:01:31 - Server Configuration Setup Complete
+2013-05-20 19:01:31 - Server is Now Running, Congratulations!
+2013-05-20 19:01:31 - Attempting to Start Network Module on Port: 2063
+2013-05-20 19:01:31 - Network Module Started and Listening on Port: 2063
+2013-05-20 19:01:36 - Client 127.0.0.1: Connected
+2013-05-20 19:01:46 - Client 127.0.0.1: Disconnected
+2013-05-20 19:06:15 - Server Startup Initiated
+2013-05-20 19:06:15 - Server Configuration Read
+2013-05-20 19:06:15 - Checking Filesystem Paths
+2013-05-20 19:06:15 - Filesystem Paths Verified
+2013-05-20 19:06:15 - Server Configuration Setup Complete
+2013-05-20 19:06:15 - Server is Now Running, Congratulations!
+2013-05-20 19:06:15 - Attempting to Start Network Module on Port: 2063
+2013-05-20 19:06:15 - Network Module Started and Listening on Port: 2063
+2013-05-20 19:06:18 - Client 127.0.0.1: Connected
+2013-05-20 19:06:35 - Client 127.0.0.1: Disconnected
+2013-05-20 19:06:50 - Server Startup Initiated
+2013-05-20 19:06:50 - Server Configuration Read
+2013-05-20 19:06:50 - Checking Filesystem Paths
+2013-05-20 19:06:50 - Filesystem Paths Verified
+2013-05-20 19:06:50 - Server Configuration Setup Complete
+2013-05-20 19:06:50 - Server is Now Running, Congratulations!
+2013-05-20 19:06:50 - Attempting to Start Network Module on Port: 2063
+2013-05-20 19:06:50 - Network Module Started and Listening on Port: 2063
+2013-05-20 19:06:50 - Client 127.0.0.1: Connected
+2013-05-20 19:06:52 - Client 127.0.0.1: INIT - 
+2013-05-20 19:06:52 - Client 127.0.0.1: Disconnected
+2013-05-20 19:06:53 - Client 127.0.0.1: Connected
+2013-05-20 19:06:55 - Client 127.0.0.1: INIT - l
+2013-05-20 19:06:55 - Client 127.0.0.1: Disconnected
+2013-05-20 19:06:56 - Client 127.0.0.1: Connected
+2013-05-20 19:06:57 - Client 127.0.0.1: INIT - r
+2013-05-20 19:06:57 - Client 127.0.0.1: Disconnected
+2013-05-20 19:07:05 - Client 127.0.0.1: Connected
+2013-05-20 19:07:06 - Client 127.0.0.1: INIT - login
+2013-05-20 19:07:06 - Client 127.0.0.1: Disconnected
+2013-05-20 19:07:38 - Server Startup Initiated
+2013-05-20 19:07:38 - Server Configuration Read
+2013-05-20 19:07:38 - Checking Filesystem Paths
+2013-05-20 19:07:38 - Filesystem Paths Verified
+2013-05-20 19:07:38 - Server Configuration Setup Complete
+2013-05-20 19:07:38 - Server is Now Running, Congratulations!
+2013-05-20 19:07:38 - Attempting to Start Network Module on Port: 2063
+2013-05-20 19:07:38 - Network Module Started and Listening on Port: 2063
+2013-05-20 19:07:38 - Client 127.0.0.1: Connected
+2013-05-20 19:07:39 - Client 127.0.0.1: INIT - 
+2013-05-20 19:07:43 - Client 127.0.0.1: Disconnected
+2013-05-20 19:07:53 - Server Startup Initiated
+2013-05-20 19:07:53 - Server Configuration Read
+2013-05-20 19:07:53 - Checking Filesystem Paths
+2013-05-20 19:07:53 - Filesystem Paths Verified
+2013-05-20 19:07:53 - Server Configuration Setup Complete
+2013-05-20 19:07:53 - Server is Now Running, Congratulations!
+2013-05-20 19:07:53 - Attempting to Start Network Module on Port: 2063
+2013-05-20 19:07:53 - Network Module Started and Listening on Port: 2063
+2013-05-20 19:07:54 - Client 127.0.0.1: Connected
+2013-05-20 19:07:55 - Client 127.0.0.1: INIT - 
+2013-05-20 19:08:07 - Client 127.0.0.1: Disconnected
+2013-05-20 19:08:24 - Server Startup Initiated
+2013-05-20 19:08:24 - Server Configuration Read
+2013-05-20 19:08:24 - Checking Filesystem Paths
+2013-05-20 19:08:24 - Filesystem Paths Verified
+2013-05-20 19:08:24 - Server Configuration Setup Complete
+2013-05-20 19:08:24 - Server is Now Running, Congratulations!
+2013-05-20 19:08:24 - Attempting to Start Network Module on Port: 2063
+2013-05-20 19:08:24 - Network Module Started and Listening on Port: 2063
+2013-05-20 19:08:24 - Client 127.0.0.1: Connected
+2013-05-20 19:08:26 - Client 127.0.0.1: INIT - l
+2013-05-20 19:08:26 - Client 127.0.0.1: INIT - 
+2013-05-20 19:08:27 - Client 127.0.0.1: INIT - 
+2013-05-20 19:08:27 - Client 127.0.0.1: INIT - q
+2013-05-20 19:08:27 - Client 127.0.0.1: INIT - 
+2013-05-20 19:08:28 - Client 127.0.0.1: INIT - quit
+2013-05-20 19:08:28 - Client 127.0.0.1: Disconnected
+2013-05-20 19:08:28 - Client 127.0.0.1: INIT - 
+2013-05-20 19:08:29 - Client 127.0.0.1: INIT - 
+2013-05-20 19:08:29 - Client 127.0.0.1: INIT - 
+2013-05-20 19:08:29 - Client 127.0.0.1: INIT - 
+2013-05-20 19:08:29 - Client 127.0.0.1: INIT - 
+2013-05-20 19:08:30 - Client 127.0.0.1: INIT - 
+2013-05-20 19:08:30 - Client 127.0.0.1: INIT - 
+2013-05-20 19:08:30 - Client 127.0.0.1: INIT - 
+2013-05-20 19:08:30 - Client 127.0.0.1: INIT - 
+2013-05-20 19:08:30 - Client 127.0.0.1: INIT - 
+2013-05-20 19:08:30 - Client 127.0.0.1: INIT - 
+2013-05-20 19:08:30 - Client 127.0.0.1: INIT - 
+2013-05-20 19:08:31 - Client 127.0.0.1: INIT - quit
+2013-05-20 19:08:31 - Client 127.0.0.1: Disconnected
+2013-05-20 19:08:31 - Client 127.0.0.1: INIT - 
+2013-05-20 19:08:32 - Client 127.0.0.1: INIT - 
+2013-05-20 19:08:32 - Client 127.0.0.1: INIT - 
+2013-05-20 19:08:33 - Client 127.0.0.1: Disconnected
+2013-05-20 19:12:24 - Server Startup Initiated
+2013-05-20 19:12:24 - Server Configuration Read
+2013-05-20 19:12:24 - Checking Filesystem Paths
+2013-05-20 19:12:24 - Filesystem Paths Verified
+2013-05-20 19:12:24 - Server Configuration Setup Complete
+2013-05-20 19:12:24 - Server is Now Running, Congratulations!
+2013-05-20 19:12:24 - Attempting to Start Network Module on Port: 2063
+2013-05-20 19:12:24 - Network Module Started and Listening on Port: 2063
+2013-05-20 19:12:36 - Server Startup Initiated
+2013-05-20 19:12:36 - Server Configuration Read
+2013-05-20 19:12:36 - Checking Filesystem Paths
+2013-05-20 19:12:36 - Filesystem Paths Verified
+2013-05-20 19:12:36 - Server Configuration Setup Complete
+2013-05-20 19:12:36 - Server is Now Running, Congratulations!
+2013-05-20 19:12:36 - Attempting to Start Network Module on Port: 2063
+2013-05-20 19:12:36 - Network Module Started and Listening on Port: 2063
+2013-05-20 19:12:49 - Server Startup Initiated
+2013-05-20 19:12:49 - Server Configuration Read
+2013-05-20 19:12:49 - Checking Filesystem Paths
+2013-05-20 19:12:49 - Filesystem Paths Verified
+2013-05-20 19:12:49 - Server Configuration Setup Complete
+2013-05-20 19:12:49 - Server is Now Running, Congratulations!
+2013-05-20 19:12:49 - Attempting to Start Network Module on Port: 2063
+2013-05-20 19:12:49 - Network Module Started and Listening on Port: 2063
+2013-05-20 19:19:44 - Server Startup Initiated
+2013-05-20 19:19:44 - Server Configuration Read
+2013-05-20 19:19:44 - Checking Filesystem Paths
+2013-05-20 19:19:44 - Filesystem Paths Verified
+2013-05-20 19:19:44 - Server Configuration Setup Complete
+2013-05-20 19:19:44 - Server is Now Running, Congratulations!
+2013-05-20 19:19:44 - Attempting to Start Network Module on Port: 2063
+2013-05-20 19:19:44 - Network Module Started and Listening on Port: 2063
+2013-05-20 19:19:45 - Client 127.0.0.1: Connected
+2013-05-20 19:19:48 - Client 127.0.0.1: INIT - l
+2013-05-20 19:19:54 - Client 127.0.0.1: Disconnected
+2013-05-20 19:20:13 - Server Startup Initiated
+2013-05-20 19:20:13 - Server Configuration Read
+2013-05-20 19:20:13 - Checking Filesystem Paths
+2013-05-20 19:20:13 - Filesystem Paths Verified
+2013-05-20 19:20:13 - Server Configuration Setup Complete
+2013-05-20 19:20:13 - Server is Now Running, Congratulations!
+2013-05-20 19:20:13 - Attempting to Start Network Module on Port: 2063
+2013-05-20 19:20:13 - Network Module Started and Listening on Port: 2063
+2013-05-20 19:20:13 - Client 127.0.0.1: Connected
+2013-05-20 19:20:15 - Client 127.0.0.1: INIT - 
+2013-05-20 19:20:20 - Client 127.0.0.1: Disconnected
+2013-05-20 19:20:30 - Server Startup Initiated
+2013-05-20 19:20:30 - Server Configuration Read
+2013-05-20 19:20:30 - Checking Filesystem Paths
+2013-05-20 19:20:30 - Filesystem Paths Verified
+2013-05-20 19:20:30 - Server Configuration Setup Complete
+2013-05-20 19:20:30 - Server is Now Running, Congratulations!
+2013-05-20 19:20:30 - Attempting to Start Network Module on Port: 2063
+2013-05-20 19:20:30 - Network Module Started and Listening on Port: 2063
+2013-05-20 19:20:30 - Client 127.0.0.1: Connected
+2013-05-20 19:20:32 - Client 127.0.0.1: INIT - l
+2013-05-20 19:20:32 - Client 127.0.0.1: INIT - 
+2013-05-20 19:20:33 - Client 127.0.0.1: INIT - quit
+2013-05-20 19:20:33 - Client 127.0.0.1: Disconnected
+2013-05-20 19:20:33 - Client 127.0.0.1: INIT - 
+2013-05-20 19:20:34 - Client 127.0.0.1: INIT - login
+2013-05-20 19:20:34 - Client 127.0.0.1: Disconnected
+2013-05-20 19:20:36 - Client 127.0.0.1: Connected
+2013-05-20 19:20:37 - Client 127.0.0.1: INIT - 
+2013-05-20 19:20:37 - Client 127.0.0.1: INIT - 
+2013-05-20 19:20:38 - Client 127.0.0.1: INIT - 
+2013-05-20 19:20:38 - Client 127.0.0.1: INIT - 
+2013-05-20 19:20:39 - Client 127.0.0.1: INIT - quit
+2013-05-20 19:20:39 - Client 127.0.0.1: Disconnected
+2013-05-20 19:20:39 - Client 127.0.0.1: INIT - 
+2013-05-20 19:20:40 - Client 127.0.0.1: INIT - 
+2013-05-20 19:20:41 - Client 127.0.0.1: INIT - 
+2013-05-20 19:20:48 - Client 127.0.0.1: INIT - quit
+2013-05-20 19:20:48 - Client 127.0.0.1: Disconnected
+2013-05-20 19:20:48 - Client 127.0.0.1: INIT - 
+2013-05-20 19:20:49 - Client 127.0.0.1: INIT - quit
+2013-05-20 19:20:49 - Client 127.0.0.1: Disconnected
+2013-05-20 19:20:49 - Client 127.0.0.1: INIT - 
+2013-05-20 19:20:50 - Client 127.0.0.1: INIT - quit
+2013-05-20 19:20:50 - Client 127.0.0.1: Disconnected
+2013-05-20 19:20:50 - Client 127.0.0.1: INIT - 
+2013-05-20 19:20:50 - Client 127.0.0.1: INIT - q
+2013-05-20 19:20:50 - Client 127.0.0.1: INIT - 
+2013-05-20 19:20:51 - Client 127.0.0.1: INIT - quit
+2013-05-20 19:20:51 - Client 127.0.0.1: Disconnected
+2013-05-20 19:20:51 - Client 127.0.0.1: INIT - 
+2013-05-20 19:20:52 - Client 127.0.0.1: INIT - exit
+2013-05-20 19:20:52 - Client 127.0.0.1: Disconnected
+2013-05-20 19:20:52 - Client 127.0.0.1: INIT - 
+2013-05-20 19:20:53 - Client 127.0.0.1: INIT - logout
+2013-05-20 19:20:53 - Client 127.0.0.1: Disconnected
+2013-05-20 19:20:53 - Client 127.0.0.1: INIT - 
+2013-05-20 19:20:54 - Client 127.0.0.1: INIT - clear
+2013-05-20 19:20:54 - Client 127.0.0.1: Disconnected
+2013-05-20 19:20:54 - Client 127.0.0.1: INIT - 
+2013-05-20 19:20:59 - Client 127.0.0.1: INIT - logoout
+2013-05-20 19:20:59 - Client 127.0.0.1: INIT - 
+2013-05-20 19:21:00 - Client 127.0.0.1: INIT - logout
+2013-05-20 19:21:00 - Client 127.0.0.1: Disconnected
+2013-05-20 19:21:00 - Client 127.0.0.1: INIT - 
+2013-05-20 19:21:02 - Client 127.0.0.1: INIT - quit
+2013-05-20 19:21:02 - Client 127.0.0.1: Disconnected
+2013-05-20 19:21:02 - Client 127.0.0.1: INIT - 
+2013-05-20 19:21:03 - Client 127.0.0.1: INIT - quit
+2013-05-20 19:21:03 - Client 127.0.0.1: Disconnected
+2013-05-20 19:21:03 - Client 127.0.0.1: INIT - 
+2013-05-20 19:21:03 - Client 127.0.0.1: INIT - quit
+2013-05-20 19:21:03 - Client 127.0.0.1: Disconnected
+2013-05-20 19:21:03 - Client 127.0.0.1: INIT - 
+2013-05-20 19:21:04 - Client 127.0.0.1: INIT - q
+2013-05-20 19:21:04 - Client 127.0.0.1: INIT - 
+2013-05-20 19:21:05 - Client 127.0.0.1: INIT - quit
+2013-05-20 19:21:05 - Client 127.0.0.1: Disconnected
+2013-05-20 19:21:05 - Client 127.0.0.1: INIT - 
+2013-05-20 19:21:07 - Client 127.0.0.1: INIT - exit
+2013-05-20 19:21:07 - Client 127.0.0.1: Disconnected
+2013-05-20 19:21:07 - Client 127.0.0.1: INIT - 
+2013-05-20 19:21:08 - Client 127.0.0.1: INIT - exit
+2013-05-20 19:21:08 - Client 127.0.0.1: Disconnected
+2013-05-20 19:21:08 - Client 127.0.0.1: INIT - 
+2013-05-20 19:21:08 - Client 127.0.0.1: INIT - 
+2013-05-20 19:21:08 - Client 127.0.0.1: INIT - 
+2013-05-20 19:21:09 - Client 127.0.0.1: INIT - 
+2013-05-20 19:21:10 - Client 127.0.0.1: INIT - quit
+2013-05-20 19:21:10 - Client 127.0.0.1: Disconnected
+2013-05-20 19:21:10 - Client 127.0.0.1: INIT - 
+2013-05-20 19:21:10 - Client 127.0.0.1: INIT - 
+2013-05-20 19:21:11 - Client 127.0.0.1: INIT - quit
+2013-05-20 19:21:11 - Client 127.0.0.1: Disconnected
+2013-05-20 19:21:11 - Client 127.0.0.1: INIT - 
+2013-05-20 19:21:12 - Client 127.0.0.1: INIT - 
+2013-05-20 19:21:12 - Client 127.0.0.1: INIT - 
+2013-05-20 19:21:12 - Client 127.0.0.1: INIT - 
+2013-05-20 19:21:13 - Client 127.0.0.1: INIT - 
+2013-05-20 19:21:14 - Client 127.0.0.1: INIT - quit
+2013-05-20 19:21:14 - Client 127.0.0.1: Disconnected
+2013-05-20 19:21:14 - Client 127.0.0.1: INIT - 
+2013-05-20 19:21:15 - Client 127.0.0.1: INIT - clear
+2013-05-20 19:21:15 - Client 127.0.0.1: Disconnected
+2013-05-20 19:21:15 - Client 127.0.0.1: INIT - 
+2013-05-20 19:21:23 - Client 127.0.0.1: INIT - login
+2013-05-20 19:21:23 - Client 127.0.0.1: Disconnected
+2013-05-20 19:21:56 - Server Startup Initiated
+2013-05-20 19:21:56 - Server Configuration Read
+2013-05-20 19:21:56 - Checking Filesystem Paths
+2013-05-20 19:21:56 - Filesystem Paths Verified
+2013-05-20 19:21:56 - Server Configuration Setup Complete
+2013-05-20 19:21:56 - Server is Now Running, Congratulations!
+2013-05-20 19:21:56 - Attempting to Start Network Module on Port: 2063
+2013-05-20 19:21:56 - Network Module Started and Listening on Port: 2063
+2013-05-20 19:21:57 - Client 127.0.0.1: Connected
+2013-05-20 19:21:58 - Client 127.0.0.1: INIT - l
+2013-05-20 19:21:58 - Client 127.0.0.1: INIT - 
+2013-05-20 19:22:00 - Client 127.0.0.1: INIT - login
+2013-05-20 19:22:00 - Client 127.0.0.1: Disconnected
+2013-05-20 19:22:01 - Client 127.0.0.1: Connected
+2013-05-20 19:22:02 - Client 127.0.0.1: INIT - quit
+2013-05-20 19:22:02 - Client 127.0.0.1: Disconnected
+2013-05-20 19:22:02 - Client 127.0.0.1: INIT - 
+2013-05-20 19:22:03 - Client 127.0.0.1: INIT - exit
+2013-05-20 19:22:03 - Client 127.0.0.1: Disconnected
+2013-05-20 19:22:03 - Client 127.0.0.1: INIT - 
+2013-05-20 19:22:04 - Client 127.0.0.1: INIT - 
+2013-05-20 19:22:05 - Client 127.0.0.1: INIT - 
+2013-05-20 19:22:05 - Client 127.0.0.1: INIT - 
+2013-05-20 19:22:06 - Client 127.0.0.1: INIT - quit
+2013-05-20 19:22:06 - Client 127.0.0.1: Disconnected
+2013-05-20 19:22:06 - Client 127.0.0.1: INIT - 
+2013-05-20 19:22:08 - Client 127.0.0.1: INIT - register
+2013-05-20 19:22:08 - Client 127.0.0.1: INIT - 
+2013-05-20 19:22:08 - Client 127.0.0.1: INIT - raw
+2013-05-20 19:22:08 - Client 127.0.0.1: INIT - 
+2013-05-20 19:22:10 - Client 127.0.0.1: INIT - clear
+2013-05-20 19:22:10 - Client 127.0.0.1: Disconnected
+2013-05-20 19:22:10 - Client 127.0.0.1: INIT - 
+2013-05-20 19:22:12 - Client 127.0.0.1: INIT - quit
+2013-05-20 19:22:12 - Client 127.0.0.1: Disconnected
+2013-05-20 19:22:12 - Client 127.0.0.1: INIT - 
+2013-05-20 19:22:13 - Client 127.0.0.1: INIT - login
+2013-05-20 19:22:13 - Client 127.0.0.1: Disconnected
+2013-05-20 19:23:42 - Server Startup Initiated
+2013-05-20 19:23:42 - Server Configuration Read
+2013-05-20 19:23:42 - Checking Filesystem Paths
+2013-05-20 19:23:42 - Filesystem Paths Verified
+2013-05-20 19:23:42 - Server Configuration Setup Complete
+2013-05-20 19:23:42 - Server is Now Running, Congratulations!
+2013-05-20 19:23:42 - Attempting to Start Network Module on Port: 2063
+2013-05-20 19:23:42 - Network Module Started and Listening on Port: 2063
+2013-05-20 19:23:46 - Client 127.0.0.1: Connected
+2013-05-20 19:23:47 - Client 127.0.0.1: INIT - quit
+2013-05-20 19:23:47 - Client 127.0.0.1: INIT - 
+2013-05-20 19:23:49 - Client 127.0.0.1: INIT - exit
+2013-05-20 19:23:49 - Client 127.0.0.1: INIT - 
+2013-05-20 19:23:50 - Client 127.0.0.1: INIT - login
+2013-05-20 19:23:50 - Client 127.0.0.1: Disconnected
+2013-05-20 19:24:26 - Client 127.0.0.1: Connected
+2013-05-20 19:24:32 - Server Startup Initiated
+2013-05-20 19:24:32 - Server Configuration Read
+2013-05-20 19:24:32 - Checking Filesystem Paths
+2013-05-20 19:24:32 - Filesystem Paths Verified
+2013-05-20 19:24:32 - Server Configuration Setup Complete
+2013-05-20 19:24:32 - Server is Now Running, Congratulations!
+2013-05-20 19:24:32 - Attempting to Start Network Module on Port: 2063
+2013-05-20 19:24:32 - Network Module Started and Listening on Port: 2063
+2013-05-20 19:24:32 - Client 127.0.0.1: Connected
+2013-05-20 19:24:34 - Client 127.0.0.1: INIT - login
+2013-05-20 19:24:34 - Client 127.0.0.1: Disconnected
+2013-05-20 19:24:35 - Client 127.0.0.1: Connected
+2013-05-20 19:24:35 - Client 127.0.0.1: INIT - quit
+2013-05-20 19:24:35 - Client 127.0.0.1: Disconnected
+2013-05-20 19:24:37 - Client 127.0.0.1: Connected
+2013-05-20 19:24:39 - Client 127.0.0.1: INIT - exit
+2013-05-20 19:24:39 - Client 127.0.0.1: Disconnected
+2013-05-20 19:24:41 - Client 127.0.0.1: Connected
+2013-05-20 19:24:42 - Client 127.0.0.1: INIT - close
+2013-05-20 19:24:42 - Client 127.0.0.1: INIT - 
+2013-05-20 19:24:43 - Client 127.0.0.1: INIT - quit
+2013-05-20 19:24:43 - Client 127.0.0.1: Disconnected
+2013-05-20 19:24:44 - Client 127.0.0.1: Connected
+2013-05-20 19:24:46 - Client 127.0.0.1: INIT - register
+2013-05-20 19:24:46 - Client 127.0.0.1: INIT - 
+2013-05-20 19:24:49 - Client 127.0.0.1: INIT - raw
+2013-05-20 19:24:49 - Client 127.0.0.1: INIT - 
+2013-05-20 19:24:50 - Client 127.0.0.1: INIT - clear
+2013-05-20 19:24:50 - Client 127.0.0.1: Disconnected
+2013-05-20 19:24:50 - Client 127.0.0.1: INIT - 
+2013-05-20 19:24:51 - Client 127.0.0.1: INIT - login
+2013-05-20 19:24:51 - Client 127.0.0.1: Disconnected
