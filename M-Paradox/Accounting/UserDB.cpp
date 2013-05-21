@@ -10,13 +10,14 @@
 using std::string;
 using std::map;
 
-// declare the static instance
+// Important to remember this :
+// here we declare the static instance
 UserDatabase::users UserDatabase::m_users;
 
 // --------------------------------------------------------------------
 //  finds an iterator based on its connection
 // --------------------------------------------------------------------
-UserDatabase::iterator UserDatabase::find( Connection<Telnet>* p_connection )
+UserDatabase::iterator UserDatabase::find( TCP_Participant* p_connection )
 {
     // start at the beginning of the database
     iterator itr = m_users.begin();
@@ -40,7 +41,7 @@ UserDatabase::iterator UserDatabase::find( Connection<Telnet>* p_connection )
 // --------------------------------------------------------------------
 //  adds a new user to the database; returns true on success.
 // --------------------------------------------------------------------
-bool UserDatabase::AddUser( Connection<Telnet>* p_connection, string p_name )
+bool UserDatabase::AddUser( TCP_Participant* p_connection, string p_name )
 {
     if( !HasUser( p_name ) && IsValidName( p_name ) )
     {
@@ -53,7 +54,7 @@ bool UserDatabase::AddUser( Connection<Telnet>* p_connection, string p_name )
 // --------------------------------------------------------------------
 //  Deletes a user based on his connection
 // --------------------------------------------------------------------
-void UserDatabase::DeleteUser( Connection<Telnet>* p_connection )
+void UserDatabase::DeleteUser( TCP_Participant* p_connection )
 {
     iterator itr = find( p_connection );
     if( itr != m_users.end() )
@@ -64,7 +65,10 @@ void UserDatabase::DeleteUser( Connection<Telnet>* p_connection )
 // --------------------------------------------------------------------
 //  deternimes if the database has a specified username
 // --------------------------------------------------------------------
-bool UserDatabase::HasUser( string& p_name )
+// We'll need to update this later to also check the MySQL database for
+// Existing user accounts.
+
+bool UserDatabase::HasUser( std::string& p_name )
 {
     iterator itr = m_users.begin();
     
@@ -81,12 +85,12 @@ bool UserDatabase::HasUser( string& p_name )
 // --------------------------------------------------------------------
 //  determines if a username is valid or not.
 // --------------------------------------------------------------------
-bool UserDatabase::IsValidName( const string& p_name )
+bool UserDatabase::IsValidName( const std::string& p_name )
 {
-    static string inv = " \"'~!@#$%^&*+/\\[]{}<>()=.,?;:";
+    static std::string inv = " \"'~!@#$%^&*+/\\[]{}<>()=.,?;:";
 
     // must not contain any invalid characters
-    if(  p_name.find_first_of( inv ) != string::npos )
+    if(  p_name.find_first_of( inv ) != std::string::npos )
     {
         return false;
     }
@@ -104,4 +108,12 @@ bool UserDatabase::IsValidName( const string& p_name )
     }
 
     return true;
+}
+
+
+std::string UserDatabase::ReturnScreen( TCP_Participant* p_connection )
+{
+    iterator itr = find( p_connection );
+    std::string output = itr->screen;
+    return output;
 }

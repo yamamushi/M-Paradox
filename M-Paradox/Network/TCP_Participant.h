@@ -9,10 +9,13 @@
 
 #include <memory>
 #include <boost/shared_ptr.hpp>
+#include <string>
 
 class TCP_Participant {
     
 private:
+    
+    std::string username;
     
 public:
     

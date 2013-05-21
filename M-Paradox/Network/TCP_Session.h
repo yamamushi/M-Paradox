@@ -45,6 +45,8 @@ private:
     /// Holds the outbound data.
     std::string outbound_data_;
     
+    std::string username;
+    
     /// Holds outbound screen
     std::string screen;
     
@@ -70,6 +72,8 @@ public:
     void kickStart();
     void startSession(const boost::system::error_code& error);
     void initMode(const boost::system::error_code& error);
+    
+    void registration(const boost::system::error_code& error);
     
     void startRaw();
     

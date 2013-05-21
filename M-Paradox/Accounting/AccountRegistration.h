@@ -9,6 +9,19 @@
 #ifndef __M_Paradox__AccountRegistration__
 #define __M_Paradox__AccountRegistration__
 
-#include <iostream>
+#include "../Network/TCP_Participant.h"
+
+class AccountRegistration {
+    
+public:
+    
+    std::string Register(TCP_Participant* conn, std::string username);
+    bool checkRegistrationStatus(){return success;};
+    
+private:
+    
+    bool success = false;
+    
+};
 
 #endif /* defined(__M_Paradox__AccountRegistration__) */

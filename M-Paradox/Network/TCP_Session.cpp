@@ -8,6 +8,8 @@
 
 #include "TCP_Session.h"
 #include "TCP_Participant.h"
+#include "../Accounting/AccountRegistration.h"
+#include "../Accounting/UserDB.h"
 #include "../utils/FileLogger.h"
 #include "../serialization/Boost_Serialization.h"
 #include "../Messages/DefaultMessages.h"
@@ -21,6 +23,9 @@
 #include <memory>
 #include <iostream>
 #include <vector>
+#include <chrono>
+#include <thread>
+
 
 
 
@@ -32,9 +37,8 @@ void TCP_Session::start(){
     // Disable Nagles Algorithm - http://en.wikipedia.org/wiki/Nagle's_algorithm
     tcp_socket.set_option(boost::asio::ip::tcp::no_delay(true));
     // Join our tcp client pool
-    
     tcp_pool.join(shared_from_this());
-
+    
     kickStart();
 }
 
@@ -106,23 +110,64 @@ void TCP_Session::initMode(const boost::system::error_code& error)
         
         fileLogger->ErrorLog("Client " + clientIP + ": INIT - " + modeRequest);
         
-        if(modeRequest == "logout" || modeRequest == "quit" || modeRequest == "exit" )
+        if(modeRequest == "quit" || modeRequest == "exit" || modeRequest == "q" )
         {
             tcp_socket.shutdown(tcp_socket.shutdown_both);
             //tcp_socket.cancel();
             end();
         }
-        if(modeRequest == "login" || modeRequest == "register")
+        // This should pass to a function that will check registration and add the user to the UserDB pool accordingly.
+        if(modeRequest == "login" || modeRequest == "l")
         {
-            startRaw();
+            boost::asio::async_write(this->tcp_socket, boost::asio::buffer("Logins are not working at this time.\r\n"), boost::bind(&TCP_Session::startSession, shared_from_this(), boost::asio::placeholders::error ));
+        }
+        if(modeRequest == "register" || modeRequest == "r" )
+        {
+            boost::asio::async_write(this->tcp_socket, boost::asio::buffer("Username: "), boost::bind(&TCP_Session::registration, shared_from_this(), boost::asio::placeholders::error ));
+            
         }
         else
         {
             extern std::string rootFSPath;
             Banner banner(rootFSPath);
+            if(UserDatabase::HasUser(username))
+                screen = UserDatabase::ReturnScreen(this);
             boost::asio::async_write(this->tcp_socket, boost::asio::buffer(screen), boost::bind(&TCP_Session::startSession, shared_from_this(), boost::asio::placeholders::error ));
         }
         
+    }
+    else
+    {
+        end();
+    }
+}
+
+void TCP_Session::registration(const boost::system::error_code& error)
+{
+    if (!error)
+    {
+        bool pending = true;
+        std::string output;
+        std::string usernameAttempt;
+        AccountRegistration accountRegistration;
+        while(pending){
+            boost::asio::streambuf buffer;
+            boost::asio::read_until(this->tcp_socket, buffer, "\r\n");
+            std::istream str(&buffer);
+            str >> usernameAttempt;
+            output = accountRegistration.Register( this, usernameAttempt);
+            if(accountRegistration.checkRegistrationStatus()){
+                pending = false;
+            }
+            else{
+                boost::asio::write(this->tcp_socket, boost::asio::buffer(output));
+            }
+        }
+        
+        username = usernameAttempt;
+        boost::asio::async_write(this->tcp_socket, boost::asio::buffer(output), boost::bind(&TCP_Session::startSession, shared_from_this(), boost::asio::placeholders::error ));
+        //std::chrono::milliseconds dura( 2000 );
+        //std::this_thread::sleep_for(dura);
     }
     else
     {
