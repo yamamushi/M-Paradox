@@ -20,7 +20,7 @@ const std::string loginMenu_MSG(resetColors_ANSI+"\nCommands Available: \n"
                       "r)egister\n"
                       "q)uit\r\n");
 
-const std::string defaultBanner_MSG("\x1b[2J\x1b[H\x1b[7h\x1b[0;1;40;37m\x1b[?33h\n"
+const std::string defaultBanner_MSG("\x1b[2J\x1b[H\x1b[37m\n"
                        "\x1b[18C\x1b[5m..\x1b[25m\x1b[10C\x1b[0m\x1b[7C\x1b[34m€€€€€€€€€€€\x1b[37m\x1b[19C\x1b[1m   \x1b[5m..\x1b[25m\n"
                        "\x1b[18C\x1b[5m..\x1b[25m\x1b[10C\x1b[0m    \x1b[34m€€€\x1b[37m \x1b[34m.,;;;;;,.\x1b[37m \x1b[34m€€€\n"
                        "\x1b[1;37m\x1b[30C\x1b[0m  \x1b[34m€€\x1b[37m \x1b[34m.,%!&&!%;%%%,.\x1b[37m  \x1b[34m€€\x1b[37m\x1b[14C\x1b[1m\x1b[6C.,,;%\n"

@@ -10,7 +10,6 @@
 #include "TCP_Pool.h"
 #include "Boost_Net_Asio.h"
 #include "TCP_Participant.h"
-#include "Packets.h"
 #include "../serialization/Boost_Serialization.h"
 #include "../utils/FileLogger.h"
 #include <memory>
@@ -27,11 +26,11 @@
 extern FileLogger *fileLogger;
 
 
-
-
 class TCP_Session : public TCP_Participant, public boost::enable_shared_from_this<TCP_Session> {
     
 private:
+    
+    enum { HEADER_SIZE = 8 };
     
     boost::asio::ip::tcp::socket tcp_socket;
     boost::asio::io_service local_io_service;
@@ -45,6 +44,9 @@ private:
     
     /// Holds the outbound data.
     std::string outbound_data_;
+    
+    /// Holds outbound screen
+    std::string screen;
     
     /// Holds an inbound header.
     char inbound_header_[HEADER_SIZE];
@@ -115,8 +117,7 @@ public:
     {
         // Issue a read operation to read exactly the number of bytes in a header.
         void (TCP_Session::*f)(const boost::system::error_code&, T&, boost::tuple<Handler>) = &TCP_Session::handle_read_header<T, Handler>;
-        boost::asio::async_read(tcp_socket, boost::asio::buffer(inbound_header_), boost::bind(f, this, boost::asio::placeholders::error, boost::ref(t),
-                                                                                              boost::make_tuple(handler)));
+        boost::asio::async_read(tcp_socket, boost::asio::buffer(inbound_header_), boost::bind(f, this, boost::asio::placeholders::error, boost::ref(t), boost::make_tuple(handler)));
     }
     
     // Handle a completed read of a message header. The handler is passed using

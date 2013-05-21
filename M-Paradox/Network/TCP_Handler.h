@@ -22,11 +22,9 @@ private:
     boost::asio::io_service& tcp_io_service;
     boost::asio::ip::tcp::acceptor tcp_acceptor;
     
-    TCP_Pool tcp_pool;
-    
-    
-    
 public:
+    
+    TCP_Pool tcp_pool;
     
     TCP_Handler(boost::asio::io_service& io_service, int port) : tcp_io_service(io_service), tcp_acceptor(io_service, boost::asio::ip::tcp::endpoint(boost::asio::ip::tcp::v4(), port)) {
         accept_connection();

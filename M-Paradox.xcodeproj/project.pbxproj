@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7407FA6F1744ADD700997452 /* m_server.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7407FA6D1744ADD700997452 /* m_server.cpp */; };
 		7407FA7F1744B49700997452 /* ConsoleLog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7407FA721744B49700997452 /* ConsoleLog.cpp */; };
 		7407FA801744B49700997452 /* FileLogger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7407FA741744B49700997452 /* FileLogger.cpp */; };
 		7407FA811744B49700997452 /* Filesystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7407FA761744B49700997452 /* Filesystem.cpp */; };
@@ -15,7 +14,6 @@
 		7407FA831744B49700997452 /* Random.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7407FA7A1744B49700997452 /* Random.cpp */; };
 		7407FA881744B59000997452 /* ServerInit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7407FA861744B59000997452 /* ServerInit.cpp */; };
 		7407FA8F1744B5FE00997452 /* ServerConfig.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7407FA8B1744B5FE00997452 /* ServerConfig.cpp */; };
-		7407FA9C1744B6EF00997452 /* Packets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7407FA911744B6EE00997452 /* Packets.cpp */; };
 		7407FA9D1744B6EF00997452 /* TCP_Handler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7407FA931744B6EE00997452 /* TCP_Handler.cpp */; };
 		7407FA9E1744B6EF00997452 /* TCP_Participant.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7407FA961744B6EE00997452 /* TCP_Participant.cpp */; };
 		7407FA9F1744B6EF00997452 /* TCP_Pool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7407FA981744B6EE00997452 /* TCP_Pool.cpp */; };
@@ -23,11 +21,8 @@
 		7407FAB01744F00C00997452 /* banner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7407FAAE1744F00C00997452 /* banner.cpp */; };
 		740A41891738113500890613 /* server_main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 740A41881738113500890613 /* server_main.cpp */; };
 		740A418B1738113500890613 /* M_Paradox.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 740A418A1738113500890613 /* M_Paradox.1 */; };
-		748135A017405A8B006D66E7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7481359F17405A8B006D66E7 /* Cocoa.framework */; };
-		748135A217405A9B006D66E7 /* SDL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 748135A117405A9B006D66E7 /* SDL.framework */; };
-		748135AC17405E31006D66E7 /* SDL_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 748135A917405E31006D66E7 /* SDL_image.framework */; };
-		748135AD17405E31006D66E7 /* SDL_mixer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 748135AA17405E31006D66E7 /* SDL_mixer.framework */; };
-		748135AE17405E31006D66E7 /* SDL_ttf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 748135AB17405E31006D66E7 /* SDL_ttf.framework */; };
+		7427F436174B6C5800E11BB7 /* M_Paradox_Client.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7427F435174B6C5800E11BB7 /* M_Paradox_Client.1 */; };
+		7427F43C174B6D2900E11BB7 /* client_main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7427F43B174B6D2800E11BB7 /* client_main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,30 +36,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
-		7481358E17405984006D66E7 /* CopyFiles */ = {
+		7427F42F174B6C5800E11BB7 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
+				7427F436174B6C5800E11BB7 /* M_Paradox_Client.1 in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
-		};
-		748135A717405C6E006D66E7 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = Data/Images/Backgrounds;
-			dstSubfolderSpec = 7;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		7407FA6D1744ADD700997452 /* m_server.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = m_server.cpp; sourceTree = "<group>"; };
-		7407FA6E1744ADD700997452 /* m_server.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = m_server.h; sourceTree = "<group>"; };
-		7407FA701744ADF800997452 /* m_packet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = m_packet.h; sourceTree = "<group>"; };
 		7407FA721744B49700997452 /* ConsoleLog.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConsoleLog.cpp; sourceTree = "<group>"; };
 		7407FA731744B49700997452 /* ConsoleLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConsoleLog.h; sourceTree = "<group>"; };
 		7407FA741744B49700997452 /* FileLogger.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FileLogger.cpp; sourceTree = "<group>"; };
@@ -81,8 +65,6 @@
 		7407FA8A1744B5FE00997452 /* Readme */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme; sourceTree = "<group>"; };
 		7407FA8B1744B5FE00997452 /* ServerConfig.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ServerConfig.cpp; sourceTree = "<group>"; };
 		7407FA8C1744B5FE00997452 /* ServerConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerConfig.h; sourceTree = "<group>"; };
-		7407FA911744B6EE00997452 /* Packets.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Packets.cpp; sourceTree = "<group>"; };
-		7407FA921744B6EE00997452 /* Packets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Packets.h; sourceTree = "<group>"; };
 		7407FA931744B6EE00997452 /* TCP_Handler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TCP_Handler.cpp; sourceTree = "<group>"; };
 		7407FA941744B6EE00997452 /* TCP_Handler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCP_Handler.h; sourceTree = "<group>"; };
 		7407FA951744B6EE00997452 /* TCP_Netlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCP_Netlib.h; sourceTree = "<group>"; };
@@ -107,6 +89,12 @@
 		740A41911738121700890613 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		740A4198173888AC00890613 /* Readme */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme; sourceTree = "<group>"; };
 		740A4199173888B200890613 /* Readme */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme; sourceTree = "<group>"; };
+		7427F337174B151600E11BB7 /* Boost_Net_Asio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Boost_Net_Asio.h; sourceTree = "<group>"; };
+		7427F42C174B695D00E11BB7 /* TelnetOptionHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TelnetOptionHandler.h; sourceTree = "<group>"; };
+		7427F431174B6C5800E11BB7 /* M-Paradox-Client */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "M-Paradox-Client"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7427F435174B6C5800E11BB7 /* M_Paradox_Client.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; name = M_Paradox_Client.1; path = "M-Paradox-Client/M_Paradox_Client.1"; sourceTree = SOURCE_ROOT; };
+		7427F43A174B6CE900E11BB7 /* Chat_Message.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Chat_Message.h; sourceTree = "<group>"; };
+		7427F43B174B6D2800E11BB7 /* client_main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = client_main.cpp; sourceTree = "<group>"; };
 		744F3831174A522C00FBA648 /* IAC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAC.h; sourceTree = "<group>"; };
 		744F3832174A538100FBA648 /* ANSI_Escape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSI_Escape.h; sourceTree = "<group>"; };
 		744F3835174A5C9800FBA648 /* DefaultTelnetOptionHandlers.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = DefaultTelnetOptionHandlers.hpp; sourceTree = "<group>"; };
@@ -115,7 +103,6 @@
 		744F3838174A5C9800FBA648 /* TelnetOptionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TelnetOptionHandler.h; sourceTree = "<group>"; };
 		744F3839174A616600FBA648 /* NOTES */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NOTES; sourceTree = "<group>"; };
 		748135851740533E006D66E7 /* Readme */ = {isa = PBXFileReference; lastKnownFileType = text; path = Readme; sourceTree = "<group>"; };
-		7481359017405984006D66E7 /* M-Paradox-Client */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "M-Paradox-Client"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7481359F17405A8B006D66E7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		748135A117405A9B006D66E7 /* SDL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL.framework; path = /Library/Frameworks/SDL.framework; sourceTree = "<absolute>"; };
 		748135A917405E31006D66E7 /* SDL_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL_image.framework; path = /Library/Frameworks/SDL_image.framework; sourceTree = "<absolute>"; };
@@ -131,15 +118,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7481358D17405984006D66E7 /* Frameworks */ = {
+		7427F42E174B6C5800E11BB7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				748135AC17405E31006D66E7 /* SDL_image.framework in Frameworks */,
-				748135AD17405E31006D66E7 /* SDL_mixer.framework in Frameworks */,
-				748135AE17405E31006D66E7 /* SDL_ttf.framework in Frameworks */,
-				748135A217405A9B006D66E7 /* SDL.framework in Frameworks */,
-				748135A017405A8B006D66E7 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,7 +225,7 @@
 			isa = PBXGroup;
 			children = (
 				740A41851738113500890613 /* M-Paradox */,
-				7481359017405984006D66E7 /* M-Paradox-Client */,
+				7427F431174B6C5800E11BB7 /* M-Paradox-Client */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -260,6 +242,8 @@
 				740A41931738128100890613 /* File IO */,
 				740A41941738128100890613 /* Network */,
 				740A41881738113500890613 /* server_main.cpp */,
+				7427F43B174B6D2800E11BB7 /* client_main.cpp */,
+				7427F435174B6C5800E11BB7 /* M_Paradox_Client.1 */,
 				740A418A1738113500890613 /* M_Paradox.1 */,
 			);
 			name = "M-Paradox-Server";
@@ -278,9 +262,8 @@
 			isa = PBXGroup;
 			children = (
 				740A4199173888B200890613 /* Readme */,
-				7407FA911744B6EE00997452 /* Packets.cpp */,
-				7407FA921744B6EE00997452 /* Packets.h */,
 				7407FA931744B6EE00997452 /* TCP_Handler.cpp */,
+				7427F337174B151600E11BB7 /* Boost_Net_Asio.h */,
 				7407FA941744B6EE00997452 /* TCP_Handler.h */,
 				7407FA951744B6EE00997452 /* TCP_Netlib.h */,
 				7407FA961744B6EE00997452 /* TCP_Participant.cpp */,
@@ -289,9 +272,8 @@
 				7407FA991744B6EF00997452 /* TCP_Pool.h */,
 				7407FA9A1744B6EF00997452 /* TCP_Session.cpp */,
 				7407FA9B1744B6EF00997452 /* TCP_Session.h */,
-				7407FA6D1744ADD700997452 /* m_server.cpp */,
-				7407FA6E1744ADD700997452 /* m_server.h */,
-				7407FA701744ADF800997452 /* m_packet.h */,
+				7427F42C174B695D00E11BB7 /* TelnetOptionHandler.h */,
+				7427F43A174B6CE900E11BB7 /* Chat_Message.h */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -336,14 +318,13 @@
 			productReference = 740A41851738113500890613 /* M-Paradox */;
 			productType = "com.apple.product-type.tool";
 		};
-		7481358F17405984006D66E7 /* M-Paradox-Client */ = {
+		7427F430174B6C5800E11BB7 /* M-Paradox-Client */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7481359617405984006D66E7 /* Build configuration list for PBXNativeTarget "M-Paradox-Client" */;
+			buildConfigurationList = 7427F437174B6C5800E11BB7 /* Build configuration list for PBXNativeTarget "M-Paradox-Client" */;
 			buildPhases = (
-				7481358C17405984006D66E7 /* Sources */,
-				7481358D17405984006D66E7 /* Frameworks */,
-				7481358E17405984006D66E7 /* CopyFiles */,
-				748135A717405C6E006D66E7 /* CopyFiles */,
+				7427F42D174B6C5800E11BB7 /* Sources */,
+				7427F42E174B6C5800E11BB7 /* Frameworks */,
+				7427F42F174B6C5800E11BB7 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -351,7 +332,7 @@
 			);
 			name = "M-Paradox-Client";
 			productName = "M-Paradox-Client";
-			productReference = 7481359017405984006D66E7 /* M-Paradox-Client */;
+			productReference = 7427F431174B6C5800E11BB7 /* M-Paradox-Client */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -376,7 +357,7 @@
 			projectRoot = "";
 			targets = (
 				740A41841738113500890613 /* M-Paradox */,
-				7481358F17405984006D66E7 /* M-Paradox-Client */,
+				7427F430174B6C5800E11BB7 /* M-Paradox-Client */,
 			);
 		};
 /* End PBXProject section */
@@ -387,7 +368,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				740A41891738113500890613 /* server_main.cpp in Sources */,
-				7407FA6F1744ADD700997452 /* m_server.cpp in Sources */,
 				7407FA7F1744B49700997452 /* ConsoleLog.cpp in Sources */,
 				7407FA801744B49700997452 /* FileLogger.cpp in Sources */,
 				7407FA811744B49700997452 /* Filesystem.cpp in Sources */,
@@ -395,7 +375,6 @@
 				7407FA831744B49700997452 /* Random.cpp in Sources */,
 				7407FA881744B59000997452 /* ServerInit.cpp in Sources */,
 				7407FA8F1744B5FE00997452 /* ServerConfig.cpp in Sources */,
-				7407FA9C1744B6EF00997452 /* Packets.cpp in Sources */,
 				7407FA9D1744B6EF00997452 /* TCP_Handler.cpp in Sources */,
 				7407FA9E1744B6EF00997452 /* TCP_Participant.cpp in Sources */,
 				7407FA9F1744B6EF00997452 /* TCP_Pool.cpp in Sources */,
@@ -404,10 +383,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7481358C17405984006D66E7 /* Sources */ = {
+		7427F42D174B6C5800E11BB7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7427F43C174B6D2900E11BB7 /* client_main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,20 +497,34 @@
 			};
 			name = Release;
 		};
-		7481359717405984006D66E7 /* Debug */ = {
+		7427F438174B6C5800E11BB7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks;
+				OTHER_LDFLAGS = (
+					"-lboost_system",
+					"-lboost_filesystem",
+					"-lboost_program_options",
+					"-lboost_serialization",
+					"-lboost_random",
+					"-lboost_thread",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		7481359817405984006D66E7 /* Release */ = {
+		7427F439174B6C5800E11BB7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks;
+				OTHER_LDFLAGS = (
+					"-lboost_system",
+					"-lboost_filesystem",
+					"-lboost_program_options",
+					"-lboost_serialization",
+					"-lboost_random",
+					"-lboost_thread",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -556,14 +550,13 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7481359617405984006D66E7 /* Build configuration list for PBXNativeTarget "M-Paradox-Client" */ = {
+		7427F437174B6C5800E11BB7 /* Build configuration list for PBXNativeTarget "M-Paradox-Client" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7481359717405984006D66E7 /* Debug */,
-				7481359817405984006D66E7 /* Release */,
+				7427F438174B6C5800E11BB7 /* Debug */,
+				7427F439174B6C5800E11BB7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

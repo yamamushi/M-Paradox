@@ -6,7 +6,6 @@
 //  Copyright (c) 2013 TAP. All rights reserved.
 //
 
-#include "Packets.h"
 #include "TCP_Session.h"
 #include "TCP_Participant.h"
 #include "../utils/FileLogger.h"
@@ -48,6 +47,7 @@ void TCP_Session::start(){
 void TCP_Session::end(){
     
     tcp_pool.leave(shared_from_this());
+    tcp_socket.cancel();
     fileLogger->ErrorLog("Client " + clientIP + ": Disconnected");
     
 }
@@ -70,8 +70,9 @@ void TCP_Session::kickStart(){
     
     extern std::string rootFSPath;
     Banner banner(rootFSPath);
-    // We can put flower_MSG here to show off the "animations" (ansi escape codes)
-    boost::asio::async_write(this->tcp_socket, boost::asio::buffer(banner.print_banner() + loginMenu_MSG),
+    
+    screen = banner.print_banner() + loginMenu_MSG;
+    boost::asio::async_write(this->tcp_socket, boost::asio::buffer(screen),
                              boost::bind(&TCP_Session::startSession, shared_from_this(), boost::asio::placeholders::error ));
     
 }
@@ -101,24 +102,25 @@ void TCP_Session::initMode(const boost::system::error_code& error)
         
         inputStream >> modeRequest;
         
+        std::transform(modeRequest.begin(), modeRequest.end(), modeRequest.begin(), ::tolower);
+        
         fileLogger->ErrorLog("Client " + clientIP + ": INIT - " + modeRequest);
         
         if(modeRequest == "logout" || modeRequest == "quit" || modeRequest == "exit" )
         {
-            //tcp_socket.shutdown(tcp_socket.shutdown_both);
+            tcp_socket.shutdown(tcp_socket.shutdown_both);
+            //tcp_socket.cancel();
             end();
         }
-        if(modeRequest == "clear")
-        {
-            boost::asio::async_write(this->tcp_socket, boost::asio::buffer(clearScreen_ANS+resetCursor_ANS), boost::bind(&TCP_Session::end, shared_from_this()));
-        }
-        if(modeRequest == "login")
+        if(modeRequest == "login" || modeRequest == "register")
         {
             startRaw();
         }
         else
         {
-            end();
+            extern std::string rootFSPath;
+            Banner banner(rootFSPath);
+            boost::asio::async_write(this->tcp_socket, boost::asio::buffer(screen), boost::bind(&TCP_Session::startSession, shared_from_this(), boost::asio::placeholders::error ));
         }
         
     }
