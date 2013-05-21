@@ -13,13 +13,12 @@
 #include "Packets.h"
 #include "../serialization/Boost_Serialization.h"
 #include "../utils/FileLogger.h"
-#include "../Messages/IAC.h"
 #include <memory>
 #include <boost/bind.hpp>
 #include <boost/shared_ptr.hpp>
 #include <boost/enable_shared_from_this.hpp>
+
 #include <boost/tuple/tuple.hpp>
-#include <boost/pool/pool.hpp>
 #include <iomanip>
 #include <string>
 #include <sstream>
@@ -50,22 +49,13 @@ private:
     /// Holds an inbound header.
     char inbound_header_[HEADER_SIZE];
     
-    TELNET_STATUS currentState;
-    
     /// Holds the inbound data.
     std::vector<char> inbound_data_;
-    
-    enum BUFF_LENGTH
-    {
-        COMMAND_PACKET_LENGTH = 3
-    };
-    
-    boost::pool<> pool;
     
     
 public:
     
-    TCP_Session(boost::asio::io_service& io_service, TCP_Pool& pool) : tcp_socket(io_service), tcp_pool(pool), pool(512 + 1){};
+    TCP_Session(boost::asio::io_service& io_service, TCP_Pool& pool) : tcp_socket(io_service), tcp_pool(pool){};
     
     boost::asio::ip::tcp::socket& socket(){return tcp_socket;}
     
@@ -76,20 +66,10 @@ public:
     
     // Our ASIO Functions
     void kickStart();
-
     void startSession(const boost::system::error_code& error);
-    void readMode(const boost::system::error_code& error);
     void initMode(const boost::system::error_code& error);
     
-    // Handlers
-    void loginMenu();
     void startRaw();
-    
-    
-    // Telnet Helper Functions
-    
-    void ProcessTelnetProtocol(unsigned char* buffer, size_t length, char** telnetData);
-    void SendSubnegotiation(std::vector<unsigned char>& subn);
     
     
     // The following set of functions is for sending raw text_archive serialized
